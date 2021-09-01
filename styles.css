@@ -4,13 +4,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.left-container {
+/* .left-container {
     background-color: #000;
     height: 100vh;
     width: 50vw;
     position: fixed;
     
-}
+} */
 
 .dc {
     color: #525252;
@@ -26,7 +26,7 @@
 
 .right-container {
     height: 100vh;
-    width: 50vw;
+    width: 100vw;
     position: absolute;
     right: 0;
     background-color: #525252;
