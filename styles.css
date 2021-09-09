@@ -163,6 +163,38 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
     text-align:center;
 }
 
+@keyframes skills1 {
+    0% {left: 200px;}
+    50% {left: 100px;}
+    100% {left: 0;}
+}
+
+@keyframes skills2 {
+    0% {right: 200px;}
+    50% {right: 100px;}
+    100% {right: 0;}
+}
+
+@keyframes skills3 {
+    0% {left: 200px;}
+    50% {left: 50px;}
+    100% {left: 0;}
+}
+
+
+
+.skill1 {
+    animation: skills1 3s ease-in;
+}
+
+.skill2 {
+    animation: skills2 3s ease-in;
+}
+
+.skill3 {
+    animation: skills3 3s ease-in;
+}
+
 .skill-container {
     display: flex;
     text-align: center;
@@ -177,9 +209,12 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
     display: flex;
     
     flex-direction: column;
+    position: relative;
    /* margin: 3%; */
    /* border: 1px solid #000; */
 }
+
+
 
 
 /* Fourth Container */
@@ -190,8 +225,8 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
 }
 
 .app-img {
-    width: 125px;
-    height: 125px;
+    width: 75px;
+    height: 75px;
 }
 
 .app-img1, .app-img7 {
@@ -225,7 +260,8 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
   }
 
     .right-p1 {
-        padding-bottom: 10px;
+        margin: 30px 10px;
+        font-size: 1.2rem;
     }
 
   .fa-facebook-square:hover {
@@ -249,12 +285,12 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
 
 
   .fa-facebook-square {
-    left: 55%;
+    left: 60%;
     background: #fff;
     color: #3B5998;
   }
   .fa-linkedin {
-    left: 45%;
+    left: 40%;
     background: #fff;
     color: #007bb5;
   }
@@ -265,7 +301,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
   }
 
 
-  @media (min-width: 800px ) {
+  /* @media (min-width: 800px ) {
     .profile-pic {
         margin: 10% 0 2%;
     }
@@ -279,4 +315,4 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
         /* width: %; */
     }
       
-  }
+  } */
