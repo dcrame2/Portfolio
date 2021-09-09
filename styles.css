@@ -52,6 +52,16 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
     color: white;
   }
 
+.hamburger {
+    position: absolute;
+    right: 0;
+    color: #fff;
+    z-index: 5;
+    font-size: 2rem;
+    padding: 5px 10px 0;
+}
+  
+
 
 
 
