@@ -113,6 +113,10 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
 }
 
 .name {
+    font-size: 1.5rem;
+}
+
+.name1 {
     font-size: 3.5rem;
 }
 
@@ -161,13 +165,13 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
 .second-container {
     text-align: center;
     background-color: #313131;
-    padding-top: 10%;
+    padding: 30% 0;
 }
 
 .second-container.active {
     text-align: center;
     background-color: #313131;
-    padding-top: 10%;
+    padding: 30% 0;
 }
 
 
@@ -179,9 +183,9 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
 }
 
 .portfolio {
-    background-color: #000;
-    width: 75%;
-    height: 30vh;
+    background-color: #ccc;
+    width: 50vw;
+    height: 20vh;
     padding: 20% 20% 0;
     margin: 5%;
     /* color: #fff; */
@@ -271,12 +275,12 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
 }
 
 .app-img {
-    width: 75px;
-    height: 75px;
+    width: 30px;
+    height: 30px;
 }
 
 .app-img1, .app-img7 {
-    border-radius: 34px;
+    border-radius: 8px;
 }
 
 .flex-box1{
