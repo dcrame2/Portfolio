@@ -175,7 +175,10 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
 }
 
 
-
+.about-me {
+    padding-bottom: 50px;
+    margin: 8%;
+}
 
 .flex-box{
     display: flex;
@@ -202,8 +205,8 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
     /* height: 40vh; */
     text-align:center;
 }
-
-/* @keyframes skills1 {
+/* 
+@keyframes skills1 {
     0% {left: 200px;}
     50% {left: 100px;}
     100% {left: 0;}
@@ -263,6 +266,20 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
 }
 
 
+/* Contact */
+.contact-forum {
+    text-align: center;
+   
+}
+
+.forum {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 0 5%;
+}
 
 
 
