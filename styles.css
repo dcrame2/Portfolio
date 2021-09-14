@@ -5,10 +5,9 @@
     
 }
 
-/* body {
-    background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgba(241,57,57,1) 100%);
-} */
+body {
+    background-color: #313131;
+}
 
 /* .left-container {
     background-color: #000;
@@ -65,9 +64,9 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
   }
 
 .hamburger {
-    position: fixed;
+    position: absolute;
     right: 0;
-    color: #fff;
+    color: #BD1616;
     /* background-color: #000; */
     /* background-size: 100%; */
     z-index: 5;
@@ -113,12 +112,18 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
 }
 
 .name {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: #BD1616;
+    letter-spacing: 1px;
 }
 
 .name1 {
     font-size: 3.5rem;
+    letter-spacing: 1px;
+    color: #BD1616;
 }
+
+
 
 .main-skill-container {
     display: flex;
@@ -130,17 +135,31 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
     margin: 10px 3px;;
     background-color: #414141;
     color: #fff;
+    /* display: flex; */
+    margin: 7px; 
+    /* flex-direction: row; */
     border-radius: 8px;
-    padding: 2px 3px;
+    border: .2px solid #BD1616;;
+    padding: 4px 6px;
+}
+
+.skill-name{ 
+    padding: 30px 10px;
 }
 
 .profile-pic {
     margin: 20% 0 3%;
     border-radius: 50%;
     width: 30%;
-    border: 3px solid #313131;
-    
+    padding: 6px;
+    border: 1px solid #BD1616;
     filter: grayscale(20%);
+}
+
+.third-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #313131;
 }
 
 
@@ -148,6 +167,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
     padding: 2% 10%;
     font-size: 1.1rem;
     color: #000;
+    letter-spacing: 1px;
 }
 
 .first-container {
@@ -176,8 +196,14 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
 
 
 .about-me {
-    padding-bottom: 50px;
-    margin: 8%;
+    padding-bottom: 20px;
+    font-size: 20px;
+    margin: 10px 15px;
+    color: #ccc;
+    letter-spacing: 1px;
+}
+.name1 {
+    
 }
 
 .flex-box{
@@ -201,10 +227,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
 }
 
 
-.third-container {
-    /* height: 40vh; */
-    text-align:center;
-}
+
 /* 
 @keyframes skills1 {
     0% {left: 200px;}
@@ -240,15 +263,15 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(133,12,12,1) 100%, rgb
 
 .skill-container {
     display: flex;
-    text-align: center;
+    /* text-align: center; */
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #313131;
+   
 }
 
 .skill-container.active {
     display: flex;
-    text-align: center;
+    /* text-align: center; */
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -281,6 +304,14 @@ input, textarea {
     margin: 0 5%;
 }
 
+
+.city {
+    width: 70%;
+    height: 20%;
+    filter: brightness(200%);
+    filter: drop-shadow(8px 8px 10px rgb(255, 1, 1));
+    /* color: #ff0000; */
+}
 
 
 
