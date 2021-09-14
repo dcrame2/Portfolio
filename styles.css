@@ -118,6 +118,7 @@ body {
 }
 
 .name1 {
+    
     font-size: 3.5rem;
     letter-spacing: 1px;
     color: #BD1616;
@@ -139,6 +140,7 @@ body {
     margin: 7px; 
     /* flex-direction: row; */
     border-radius: 8px;
+    letter-spacing: 1px;
     border: .2px solid #BD1616;;
     padding: 4px 6px;
 }
@@ -152,7 +154,7 @@ body {
     border-radius: 50%;
     width: 30%;
     padding: 6px;
-    border: 1px solid #BD1616;
+    border: 1px solid #fff;
     filter: grayscale(20%);
 }
 
@@ -201,10 +203,9 @@ body {
     margin: 10px 15px;
     color: #ccc;
     letter-spacing: 1px;
+    line-height: 1.2;
 }
-.name1 {
-    
-}
+
 
 .flex-box{
     display: flex;
@@ -219,11 +220,35 @@ body {
     margin: 5%;
     /* color: #fff; */
     border-radius: 8px;
-    box-shadow: 0 0 8px 5px #888;
+    box-shadow: 0 0 8px 5px #BD1616;
+    /* box-shadow: 0 0 8px 5px #888; */
+}
+
+.portfolio1 {
+    background: url(img/greeklife.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+
+.portfolio2 {
+    background: url(img/col.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.portfolio3 {
+    background: url(img/gabanddyl.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .port-name {
-    font-size: 2rem;
+    font-size: 1.1rem;
+    text-align: center;
 }
 
 
