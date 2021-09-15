@@ -141,12 +141,38 @@ body {
     /* flex-direction: row; */
     border-radius: 8px;
     letter-spacing: 1px;
-    border: .2px solid #BD1616;;
+    border: .2px solid #BD1616;
     padding: 4px 6px;
 }
 
 .skill-name{ 
     padding: 30px 10px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #BD1616;
+}
+
+.work {
+    margin: 1% 5% 1%;
+    background-color: #000;
+    border-radius: 8px;
+    padding: 10px;   
+}
+
+.fa-long-arrow-alt-down{
+    font-size: 2rem;    
+    padding: 5% 0 0;
+    text-align: center;
+    color: #BD1616;
+}
+
+.work-description {
+    font-size: 15px;
+    color: #ccc;
+    letter-spacing: 1px;
+    line-height: 1.2;
 }
 
 .profile-pic {
@@ -187,7 +213,8 @@ body {
 .second-container {
     text-align: center;
     background-color: #313131;
-    padding: 30% 0;
+    padding: 80% 0;
+    margin-top: 50%;
 }
 
 .second-container.active {
@@ -215,35 +242,33 @@ body {
 .portfolio {
     background-color: #ccc;
     width: 50vw;
-    height: 20vh;
+    height: 14vh;
     padding: 20% 20% 0;
     margin: 5%;
     /* color: #fff; */
     border-radius: 8px;
-    box-shadow: 0 0 8px 5px #BD1616;
+    box-shadow: 0 0 3px 3px #BD1616;
     /* box-shadow: 0 0 8px 5px #888; */
+    cursor: pointer;
 }
 
 .portfolio1 {
-    background: url(img/greeklife.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: pointer;
+    background: url(img/greeklife.png) center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
 .portfolio2 {
-    background: url(img/col.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: pointer;
+    background: url(img/col.png) center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .portfolio3 {
-    background: url(img/gabanddyl.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: pointer;
+    background: url(img/gabanddyl.png) center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .port-name {
