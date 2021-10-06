@@ -350,8 +350,8 @@ h4 {
     flex-direction: column;
 }
 
-input, textarea {
-    margin: 0 5%;
+input, label, textarea {
+    margin: 0 25px;
 }
 
 
@@ -362,6 +362,7 @@ input, textarea {
     filter: drop-shadow(8px 8px 10px rgb(255, 1, 1));
     /* color: #ff0000; */
 }
+
 
 
 
