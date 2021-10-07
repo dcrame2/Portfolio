@@ -241,10 +241,10 @@ h4 {
 
 .portfolio {
     background-color: #ccc;
-    width: 50vw;
-    height: 14vh;
-    padding: 20% 20% 0;
-    margin: 5%;
+    width: 85%;
+    height: 50vh;
+    /* padding: 20% 20% 0; */
+    margin: 5% auto;
     /* color: #fff; */
     border-radius: 8px;
     box-shadow: 0 0 3px 3px #BD1616;
@@ -252,14 +252,26 @@ h4 {
     cursor: pointer;
 }
 
+/* h3 {
+    margin: 0 5% 10px;
+} */
+
 .portfolio1 {
-    background: url(img/greeklife.png) center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    /* background: url(img/greeklife.png) center; */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+  
+    margin: 0 5% 10px;
+}
+
+.greek {
+    width: 90%;
 }
 
 
-.portfolio2 {
+
+
+/* .portfolio2 {
     background: url(img/col.png) center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -269,7 +281,7 @@ h4 {
     background: url(img/gabanddyl.png) center;
     background-size: contain;
     background-repeat: no-repeat;
-}
+} */
 
 .port-name {
     font-size: 1.1rem;
