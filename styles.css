@@ -48,6 +48,7 @@ body {
     padding: 20px 16px;
     text-decoration: none;
     font-size: 25px;
+    text-decoration: underline #BD1616;
   
   }
   
@@ -213,7 +214,7 @@ h4 {
 .second-container {
     text-align: center;
     background-color: #313131;
-    padding: 80% 0;
+    padding: 10% 0;
     margin-top: 50%;
 }
 
@@ -240,53 +241,60 @@ h4 {
 }
 
 .portfolio {
-    background-color: #ccc;
+    background-color: #000;
+    color: #fff;
     width: 85%;
     height: 50vh;
     /* padding: 20% 20% 0; */
     margin: 5% auto;
     /* color: #fff; */
     border-radius: 8px;
-    box-shadow: 0 0 3px 3px #BD1616;
+    /* box-shadow: 0 0 2px 2px #BD1616; */
     /* box-shadow: 0 0 8px 5px #888; */
     cursor: pointer;
 }
 
-/* h3 {
-    margin: 0 5% 10px;
-} */
+.port-name {
+    margin: 5px 0;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    color: #BD1616;
+}
+
+
+.port-lang {
+    font-size: 15px;
+    color: #ccc;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    /* margin: 1% 5% 1%; */
+}
 
 .portfolio1 {
-    /* background: url(img/greeklife.png) center; */
-    /* background-size: contain; */
-    /* background-repeat: no-repeat; */
-  
-    margin: 0 5% 10px;
+    margin: 10% 5% 10px;
+    
 }
 
 .greek {
-    width: 90%;
+    width: 98%;
+}
+
+.btn {
+    margin-top: 7%;
+    font-size: 20px;
+    padding: 8px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 2px 2px #000;
+    background-color: #BD1616;
+    color: #000;
+    outline: none;
+    border: none;
+    font-weight: 700;
 }
 
 
-
-
-/* .portfolio2 {
-    background: url(img/col.png) center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.portfolio3 {
-    background: url(img/gabanddyl.png) center;
-    background-size: contain;
-    background-repeat: no-repeat;
-} */
-
-.port-name {
-    font-size: 1.1rem;
-    text-align: center;
-}
 
 
 
