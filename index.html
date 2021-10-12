@@ -15,19 +15,32 @@
 </head>
 <body>
 
+
+    <div class="left-nav">
+        <a href="https://www.facebook.com/dylan.cramer.5" class="fb"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.linkedin.com/in/dylan-cramer/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/dcrame2/cramer"><i class="fab fa-github"></i></a>
+    </div>
+
     <div class="hamburger">
        
         <i class="fas fa-hamburger"></i>
         <!-- <i class="fas fa-chevron-circle-down"></i> -->
     </div>
 
+
+   
     
     <div class="topnav">
         <a href="#home" class="home-nav">Home</a>
         <a href="#skills" class="skills-nav">Skills</a>
         <a href="#port" class="port-nav">Portfolio</a>
+
+
        
     </div>
+
+    
 
 
 
@@ -120,9 +133,10 @@
                     <h3 class="port-name">Greek Life Website</h3>
                 <em><h3 class="port-lang">HTML5, CSS3, JavaScript & Bootsrap</h3></em>
                 </div>
-                <a class="btn" href="">Visit</a>
-                <a class="btn" href="https://github.com/dcrame2/college-work/tree/master/GreekLifeWebsite">GitHub</a>
-               
+                <div class="btn-container">
+                    <a class="btn" href="">Visit</a>
+                    <a class="btn" href="https://github.com/dcrame2/college-work/tree/master/GreekLifeWebsite">GitHub</a>
+                </div>
             </div>
 
             <div class="portfolio">
@@ -131,8 +145,10 @@
                     <h3 class="port-name">Chain O' Lakes Marina</h3>
                 <em><h3 class="port-lang">HTML5, CSS3, JavaScript & Bootsrap</h3></em>
                 </div>
-                <a class="btn" href="">Visit</a>
-                <a class="btn" href="https://github.com/dcrame2/chain-o-lakes">GitHub</a>
+                <div class="btn-container">
+                    <a class="btn" href="">Visit</a>
+                    <a class="btn" href="https://github.com/dcrame2/chain-o-lakes">GitHub</a>
+                </div>
             </div>
 
             <div class="portfolio">
@@ -141,23 +157,11 @@
                     <h3 class="port-name">Gab & Dyl</h3>
                 <em><h3 class="port-lang">HTML5, CSS3, JavaScript & Bootsrap</h3></em>
                 </div>
-                <a class="btn" href="https://www.google.com/">Visit</a>
-                <a class="btn" href="https://github.com/dcrame2/gabanddyl">GitHub</a>
+                <div class="btn-container">
+                    <a class="btn" href="https://www.google.com/">Visit</a>
+                    <a class="btn" href="https://github.com/dcrame2/gabanddyl">GitHub</a>
+                </div>
             </div>
-            
-
-            
-
-            <!-- <h3>Chain O' Lakes Marina Mock Up</h3>
-            <div class="portfolio portfolio2">
-                
-            </div>
-
-            <h3>Gab & Dyl</h3>
-            <div class="portfolio portfolio3">
-                
-            </div> -->
-           
         </div>
     </div>
 
@@ -167,14 +171,18 @@
     <div class="contact-forum">
         <h1 class="name">Contact</h1>
         <div class="forum">
-            <label for="">Name: </label>
-            <input type="text" placeholder="eg: Dylan Cramer">
-            <br>
-            <label for="email">Email: </label>
-            <input type="email" placeholder="dcrame2@gmail.com">
-            <br>
-            <label for="">Mesasge: </label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="label-flex">
+                <label for="">Name: </label>
+                <input type="text" placeholder="eg: Dylan Cramer">
+            </div>
+            <div class="label-flex">
+                <label for="email">Email: </label>
+                <input type="email" placeholder="dcrame2@gmail.com">
+            </div>
+            <div class="label-flex">
+                <label for="">Mesasge: </label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
         </div>
     </div>
 

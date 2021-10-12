@@ -75,26 +75,19 @@ body {
     padding: 5px 10px 0;
 }
   
+.left-nav {
+    position: absolute;
+    /* left: 0; */
+    color: #BD1616;
+    /* background-color: #000; */
+    /* background-size: 100%; */
+    z-index: 6;
+    font-size: 2rem;
+    padding: 5px 10px 0;
+}
 
 
 
-
-
-  
-
-
-
- .dc {
-    color: #525252;
-    text-align: center;
-    font-size: 20rem;
-    transform: scale(2);
-    letter-spacing: 30px;
-    padding-top: 100px;
-    /* margin-top: 100px; */
-    font-family: 'Anton', sans-serif;
-    
-} 
 
 .right-container {
     height: 100vh;
@@ -247,14 +240,14 @@ h4 {
     background-color: #231F20;
     color: #fff;
     width: 85%;
-    height: 50vh;
+    height: 45vh;
     /* padding: 20% 20% 0; */
-    margin: 5% auto;
+    margin: 10px auto;
     /* color: #fff; */
     border-radius: 8px;
     /* box-shadow: 0 0 2px 2px #BD1616; */
     /* box-shadow: 0 0 8px 5px #888; */
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .port-name {
@@ -285,7 +278,6 @@ h4 {
 }
 
 .btn {
-    
     font-size: 20px;
     padding: 8px 20px;
     border-radius: 8px;
@@ -296,6 +288,11 @@ h4 {
     border: none;
     font-weight: 700;
     text-decoration: none;
+
+}
+
+.btn-container {
+    margin-top: 30px;
 }
 
 
@@ -349,6 +346,7 @@ h4 {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .skill {
     padding: 5% 0;
     width: 300px;
@@ -377,9 +375,11 @@ h4 {
     flex-direction: column;
 }
 
-input, label, textarea {
-    margin: 0 25px;
+input, textarea {
+    width: 70%;
 }
+
+
 
 
 .city {
