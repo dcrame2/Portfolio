@@ -528,11 +528,20 @@ input, textarea {
   }
 
 
-  @media (min-width: 2000px) {
+  @media (min-width: 1600px) {
     .third-container {
         height: 100vh;
     }
 
+    .profile-pic {
+        width: 15%;
+        margin: 10% 0 3%;
+    }
+
+  }
+
+  @media (min-width: 2000px) {
+      
   }
 
 
@@ -563,7 +572,7 @@ input, textarea {
 
     .profile-pic {
         width: 20%;
-        margin: 7% 0 1%;
+        margin: 5.5% 0 1%;
     }
 
     .right-p {
