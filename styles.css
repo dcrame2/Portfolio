@@ -233,7 +233,7 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   /* flex-basis: 100px; */
-  justify-content: left;
+  justify-content: center;
 }
 
 .portfolio {
@@ -479,6 +479,7 @@ textarea {
   color: #fff;
 }
 
+/* Mobile version */
 @media (max-width: 450px) {
   .first-container {
     /* padding-top: 150px; */
@@ -487,8 +488,7 @@ textarea {
   }
 
   .pic {
-    width: 90vw;
-    padding-top: 0;
+    width: 90%;
   }
 
   /* .right-container {
@@ -499,12 +499,13 @@ textarea {
   }
 
   .right-p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .my-header {
     width: 90vw;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
+    padding-top: 0;
   }
 
   .meet-btn {
