@@ -12,6 +12,8 @@ body {
   background-color: #313131;
 }
 
+/* LARGE DISPLAYS */
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
@@ -166,6 +168,7 @@ h4 {
   width: 100vw;
   padding: 5% 0;
   background-color: #313131;
+  display: none;
   /* margin-top: 10%; */
 }
 
@@ -232,8 +235,8 @@ h4 {
 .flex-box {
   display: flex;
   flex-wrap: wrap;
-  /* flex-basis: 100px; */
-  justify-content: center;
+
+  /* justify-content: left; */
 }
 
 .portfolio {
@@ -243,6 +246,8 @@ h4 {
   color: #fff;
   flex-basis: 600px;
   flex-shrink: 1;
+  flex-grow: 0;
+  position: relative;
   /* width: 32%; */
   /* padding: 20% 20% 0; */
   margin: 10px 10px;
@@ -298,26 +303,40 @@ h4 {
   text-decoration: none;
 }
 
-/* .btn-container {
-} */
-
-/* 
-@keyframes skills1 {
-    0% {left: 200px;}
-    50% {left: 100px;}
-    100% {left: 0;}
+/* @keyframes skills1 {
+  0% {
+    left: 200px;
+  }
+  50% {
+    left: 100px;
+  }
+  100% {
+    left: 0;
+  }
 }
 
 @keyframes skills2 {
-    0% {right: 200px;}
-    50% {right: 100px;}
-    100% {right: 0;}
+  0% {
+    right: 200px;
+  }
+  50% {
+    right: 100px;
+  }
+  100% {
+    right: 0;
+  }
 }
 
 @keyframes skills3 {
-    0% {left: 200px;}
-    50% {left: 50px;}
-    100% {left: 0;}
+  0% {
+    left: 200px;
+  }
+  50% {
+    left: 50px;
+  }
+  100% {
+    left: 0;
+  }
 } */
 
 .skill1 {
@@ -335,24 +354,24 @@ h4 {
 .skill-container {
   display: flex;
   /* text-align: center; */
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
 }
 
 .skill-container.active {
   display: flex;
   /* text-align: center; */
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
 }
 
 .skill {
-  padding: 5% 0;
+  /* padding: 5% 0; */
   width: 300px;
   height: 125px;
   border-radius: 8px;
   display: flex;
-
+  justify-content: left;
   flex-direction: column;
   position: relative;
   /* margin: 3%; */
@@ -479,10 +498,97 @@ textarea {
   color: #fff;
 }
 
-/* Mobile version */
-@media (max-width: 450px) {
+/* DESKTOP  */
+@media (max-width: 1200px) and (min-width: 1025px) {
+  .name1 {
+    font-size: 5.5rem;
+  }
+
+  .right-p {
+    font-size: 1.2rem;
+  }
+
+  .my-header {
+    margin: 0 -3% 0 5%;
+  }
+
+  .meet-btn {
+    width: 20%;
+  }
+
+  .portfolio {
+    flex-basis: 300px;
+    flex-grow: inherit;
+  }
+}
+
+/* SMALL SCREENS / LAPTOPS */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .name1 {
+    font-size: 5.2rem;
+  }
+
+  .right-p {
+    font-size: 1.4rem;
+  }
+
+  .city {
+    width: 70%;
+  }
+
+  .meet-btn {
+    width: 30%;
+  }
+  .portfolio {
+    flex-basis: 375px;
+    flex-grow: inherit;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+}
+
+/* TABLET / iPADS */
+@media (max-width: 768px) and (min-width: 481px) {
   .first-container {
-    /* padding-top: 150px; */
+    flex-direction: column-reverse;
+  }
+
+  .pic {
+    width: 50%;
+  }
+  .name1 {
+    font-size: 5rem;
+  }
+
+  .right-p {
+    font-size: 1.2rem;
+  }
+
+  .meet-btn {
+    width: 20%;
+  }
+
+  .portfolio {
+    /* flex-basis: 275px; */
+    flex-grow: inherit;
+  }
+
+  .my-header {
+    width: 90vw;
+    padding-bottom: 30px;
+    padding-top: 0;
+  }
+
+  .second-container {
+    padding-top: 200px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) and (min-width: 320px) {
+  .first-container {
     flex-direction: column-reverse;
     height: 100vh;
   }
@@ -491,20 +597,17 @@ textarea {
     width: 90%;
   }
 
-  /* .right-container {
-    flex: display;
-  }*/
   .name1 {
     font-size: 4rem;
   }
 
   .right-p {
-    font-size: 1.3rem;
+    font-size: 0.9rem;
   }
 
   .my-header {
     width: 90vw;
-    padding-bottom: 30px;
+    padding-bottom: 70px;
     padding-top: 0;
   }
 
