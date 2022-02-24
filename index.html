@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" /> 
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap" rel="stylesheet">
     <title>DC</title>
 </head>
-<body>
+<body onload="myFunction()">
+
+    <div id="loader"></div>
 
 
     <div class="left-nav">
@@ -43,34 +46,15 @@
 
 
 
-<div class="right-container">
-    <!-- <div id="home" class="first-container">
-        <img src="img/dc.jpeg" class="profile-pic" alt="">
-        <br>
-        <h1 class="name1">Dylan Cramer</h1>
-        <p class="right-p">Frontend Developer from Chicago, IL.</h1>
-        <img class="city" src="img/skyline1.png" alt="">
-    </div> -->
-
+<div class="right-container animate-bottom hidden">
     <div id="home" class="first-container">
-        
         <section class="my-header">
             <h1 class="name1">Dylan Cramer</h1>
             <p class="right-p">Full Stack Web Developer from Chicago, IL.</h1>
-            <img class="city" src="img/skyline1.png" alt="">
+            <img class="city" src="img/skyline1.png" alt="skyline">
             <a class="btn meet-btn">Meet Me</a>  
         </section>
-    
-        <section class="pic">
-            <img src="img/dc.jpeg" class="profile-pic" alt="">
-        </section>
-        
-        <!-- <br> -->
-        
-    </div>
-    <!-- <hr> -->
-    <div class="third-container">
-        
+
         <div id="skills" class="skill-container">
             <h1 class="name">About</h1> 
             <p class="about-me">I am a Full Stack Web Developer specializinng in JavaScript. I enjoy all things technology, whether it's working with teams to get products to market, crafting the user stories for each person, or writing code to solve problems. I love creating websites and applications using modern technologies, but I prefer building web applications that can quickly adapt to other frameworks and languages. My proficient programming anguages and techniques are: 
@@ -96,9 +80,16 @@
                     RESTful APIs
                 </div>
             </div> 
-           
+        </div> 
+        <section class="pic ">
+            <img src="img/dc.jpeg" class="profile-pic" alt="">
+        </section>  
+    </div>
+    <div class="third-container">
+        
+        
 
-            <div class="skill skill1">
+            <!-- <div class="skill skill1">
                 <img class="icon" src="img/html.png.crdownload" alt=""> 
                 <i class="icon fas fa-laptop-code"></i> 
                 <p class="right-p">Programming</p>
@@ -111,9 +102,9 @@
             <div class="skill skill3">
                 <i class="icon far fa-lightbulb"></i>
                 <p class="right-p">Critical Thinking</p>
-            </div> 
+            </div>  -->
             
-        </div> 
+        
     </div>
 
     <!-- <hr> -->
@@ -157,6 +148,15 @@
                 </div>
             </div>
 
+
+            <div class="portfolio">
+                <div class="portfolio1">
+                    <img class="greek" src="img/pig-game.png" alt="">
+                    <h3 class="port-name">Pig Game</h3>
+                    <em><h3 class="port-lang">HTML5, CSS3 & JavaScript</h3></em>
+                    <a class="btn" href="https://www.google.com/">Play</a>
+                </div>
+            </div>
 
             <div class="portfolio">
                 <div class="portfolio1">

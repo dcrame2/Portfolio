@@ -9,6 +9,8 @@ const portfolio = document.querySelector(".second-container");
 const homeNav = document.querySelector(".home-nav");
 const home = document.querySelector(".first-container");
 
+const header = document.querySelector(".my-header");
+
 const meetBtn = document.querySelector(".meet-btn");
 
 ham.addEventListener("click", function () {
@@ -31,6 +33,18 @@ homeNav.addEventListener("click", function () {
 });
 
 meetBtn.addEventListener("click", function () {
-  home.style.display = "none";
-  third.style.display = "block";
+  header.style.display = "none";
+  skills.classList.add("active");
 });
+
+//LOADER
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.querySelector(".right-container").style.display = "block";
+}
