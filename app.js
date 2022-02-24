@@ -9,6 +9,8 @@ const portfolio = document.querySelector(".second-container");
 const homeNav = document.querySelector(".home-nav");
 const home = document.querySelector(".first-container");
 
+const header = document.querySelector(".my-header");
+
 const meetBtn = document.querySelector(".meet-btn");
 
 ham.addEventListener("click", function () {
@@ -31,8 +33,8 @@ homeNav.addEventListener("click", function () {
 });
 
 meetBtn.addEventListener("click", function () {
-  home.style.display = "none";
-  third.style.display = "block";
+  header.style.display = "none";
+  skills.classList.add("active");
 });
 
 //LOADER

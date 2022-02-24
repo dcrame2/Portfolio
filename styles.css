@@ -160,15 +160,16 @@ body {
 
 .main-skill-container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
 }
 
 .code-lang {
-  margin: 10px 3px;
+  /* margin: 10px 3px; */
   background-color: #414141;
+  text-align: center;
   color: #fff;
-  margin: 7px;
+  margin: 5px;
   border-radius: 8px;
   letter-spacing: 1px;
   border: 0.2px solid #bd1616;
@@ -215,15 +216,15 @@ h4 {
   filter: grayscale(20%);
 }
 
-.third-container {
+/* .third-container {
   height: 100vh;
   width: 100vw;
   padding: 5% 0;
   margin: 0 5% 0 0;
   background-color: #313131;
   display: none;
-  /* margin-top: 10%; */
-}
+ 
+} */
 
 .right-p {
   /* padding: 2% 10%; */
@@ -272,9 +273,10 @@ h4 {
 }
 
 .about-me {
-  padding-bottom: 20px;
+  /* padding-bottom: 10px; */
   font-size: 20px;
-  margin: 10px 15px;
+  width: 100%;
+  /* margin: 10px 15px; */
   color: #ccc;
   letter-spacing: 1px;
   line-height: 1.2;
@@ -400,10 +402,12 @@ h4 {
 }
 
 .skill-container {
-  display: flex;
-  /* text-align: center; */
+  padding-top: 110px;
+  display: none;
+  width: 50%;
   justify-content: left;
   flex-wrap: wrap;
+  margin: 0 5%;
 }
 
 .skill-container.active {
