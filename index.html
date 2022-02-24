@@ -13,7 +13,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap" rel="stylesheet">
     <title>DC</title>
 </head>
-<body>
+<body onload="myFunction()">
+
+    <div id="loader"></div>
 
 
     <div class="left-nav">
@@ -43,32 +45,18 @@
 
 
 
-<div class="right-container">
-    <!-- <div id="home" class="first-container">
-        <img src="img/dc.jpeg" class="profile-pic" alt="">
-        <br>
-        <h1 class="name1">Dylan Cramer</h1>
-        <p class="right-p">Frontend Developer from Chicago, IL.</h1>
-        <img class="city" src="img/skyline1.png" alt="">
-    </div> -->
-
+<div class="right-container animate-bottom hidden">
     <div id="home" class="first-container">
-        
         <section class="my-header">
             <h1 class="name1">Dylan Cramer</h1>
             <p class="right-p">Full Stack Web Developer from Chicago, IL.</h1>
-            <img class="city" src="img/skyline1.png" alt="">
+            <img class="city" src="img/skyline1.png" alt="skyline">
             <a class="btn meet-btn">Meet Me</a>  
         </section>
-    
-        <section class="pic">
+        <section class="pic ">
             <img src="img/dc.jpeg" class="profile-pic" alt="">
-        </section>
-        
-        <!-- <br> -->
-        
+        </section>  
     </div>
-    <!-- <hr> -->
     <div class="third-container">
         
         <div id="skills" class="skill-container">
@@ -98,7 +86,7 @@
             </div> 
            
 
-            <div class="skill skill1">
+            <!-- <div class="skill skill1">
                 <img class="icon" src="img/html.png.crdownload" alt=""> 
                 <i class="icon fas fa-laptop-code"></i> 
                 <p class="right-p">Programming</p>
@@ -111,7 +99,7 @@
             <div class="skill skill3">
                 <i class="icon far fa-lightbulb"></i>
                 <p class="right-p">Critical Thinking</p>
-            </div> 
+            </div>  -->
             
         </div> 
     </div>
@@ -157,6 +145,15 @@
                 </div>
             </div>
 
+
+            <div class="portfolio">
+                <div class="portfolio1">
+                    <img class="greek" src="img/pig-game.png" alt="">
+                    <h3 class="port-name">Pig Game</h3>
+                    <em><h3 class="port-lang">HTML5, CSS3 & JavaScript</h3></em>
+                    <a class="btn" href="https://www.google.com/">Play</a>
+                </div>
+            </div>
 
             <div class="portfolio">
                 <div class="portfolio1">

@@ -34,3 +34,15 @@ meetBtn.addEventListener("click", function () {
   home.style.display = "none";
   third.style.display = "block";
 });
+
+//LOADER
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.querySelector(".right-container").style.display = "block";
+}
