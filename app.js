@@ -34,7 +34,7 @@ homeNav.addEventListener("click", function () {
 
 meetBtn.addEventListener("click", function () {
   header.style.display = "none";
-  skills.classList.add("active");
+  skills.classList.add("active2");
 });
 
 //LOADER

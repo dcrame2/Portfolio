@@ -173,7 +173,7 @@ body {
   border-radius: 8px;
   letter-spacing: 1px;
   border: 0.2px solid #bd1616;
-  padding: 4px 6px;
+  padding: 2px 3px;
 }
 
 .skill-name {
@@ -273,13 +273,22 @@ h4 {
 }
 
 .about-me {
-  /* padding-bottom: 10px; */
   font-size: 20px;
   width: 100%;
-  /* margin: 10px 15px; */
+  padding: 30px 0;
   color: #ccc;
   letter-spacing: 1px;
   line-height: 1.2;
+}
+
+.about-me1 {
+  font-size: 20px;
+  width: 100%;
+  /* padding: 30px 0; */
+  color: #ccc;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 40px 0 0;
 }
 
 .flex-box {
@@ -340,7 +349,7 @@ h4 {
   font-size: 20px;
   margin-top: 10px;
   padding: 10px 10px;
-  width: 15%;
+  width: 17%;
   text-align: center;
   border-radius: 8px;
   display: block;
@@ -352,6 +361,10 @@ h4 {
   font-weight: 700;
   text-decoration: none;
 }
+
+/* .resume-btn {
+  margin: 30px 0;
+} */
 
 /* @keyframes skills1 {
   0% {
@@ -402,7 +415,8 @@ h4 {
 }
 
 .skill-container {
-  padding-top: 110px;
+  /* height: 100%; */
+  padding-top: 10%;
   display: none;
   width: 50%;
   justify-content: left;
@@ -410,8 +424,11 @@ h4 {
   margin: 0 5%;
 }
 
-.skill-container.active {
+.skill-container.active2 {
   display: flex;
+  height: 50%;
+  width: 50%;
+  flex-direction: column;
   /* text-align: center; */
   justify-content: left;
   flex-wrap: wrap;
@@ -569,6 +586,10 @@ textarea {
     width: 20%;
   }
 
+  .resume-btn {
+    width: 20%;
+  }
+
   /* .portfolio {
     flex-basis: 300px;
     flex-grow: inherit;
@@ -589,12 +610,30 @@ textarea {
     width: 70%;
   }
 
-  .meet-btn {
+  .meet-btn,
+  .resume-btn {
     width: 30%;
   }
   .portfolio {
     /* flex-basis: 375px; */
     flex-grow: inherit;
+  }
+
+  .about-me,
+  .about-me1 {
+    font-size: 16px;
+  }
+
+  .about-me1 {
+    padding: 30px 0 0;
+  }
+
+  .code-lang {
+    font-size: 14px;
+  }
+
+  .resume-btn {
+    font-size: 16px;
   }
 
   .name {
@@ -623,18 +662,34 @@ textarea {
     width: 20%;
   }
 
-  /* .portfolio {
-     flex-grow: inherit; 
-  } */
+  .resume-btn {
+    margin: 0;
+    width: 25%;
+  }
 
-  .my-header {
+  .code-lang {
+    height: 20px;
+    /* margin: 0px 0; */
+  }
+
+  .my-header,
+  .about-me {
     width: 90vw;
     padding-bottom: 30px;
     padding-top: 0;
   }
 
+  .about-me1 {
+    width: 90vw;
+    padding: 0 0 5px;
+  }
+
   .second-container {
     padding-top: 200px;
+  }
+
+  .btn {
+    width: 30%;
   }
 }
 
@@ -669,6 +724,15 @@ textarea {
     padding-top: 0;
   }
 
+  .about-me {
+    width: 90vw;
+  }
+
+  .about-me1 {
+    width: 90vw;
+    padding: 15px 0;
+  }
+
   .city {
     width: 50%;
   }
@@ -677,9 +741,23 @@ textarea {
     width: 90%;
   }
 
-  .meet-btn {
+  .meet-btn,
+  .resume-btn {
     width: 40%;
   }
+
+  .resume-btn {
+    margin: 0;
+  }
+
+  .code-lang {
+    height: 3%;
+    margin: 2px 5px;
+  }
+
+  /* .main-skill-container {
+    flex-direction: column;
+  } */
 
   .btn {
     /* width: 60%; */
@@ -691,6 +769,10 @@ textarea {
   }
 
   .name {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .portfolio {
+    margin: 10px 0;
   }
 }
