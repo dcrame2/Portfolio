@@ -18,7 +18,8 @@ ham.addEventListener("click", function () {
 });
 
 skillsNav.addEventListener("click", function () {
-  skills.classList.add("active");
+  header.classList.add("active3");
+  skills.classList.add("active2");
   nav.classList.remove("active1");
 });
 
@@ -28,7 +29,8 @@ portNav.addEventListener("click", function () {
 });
 
 homeNav.addEventListener("click", function () {
-  home.classList.add("active");
+  header.classList.remove("active3");
+  skills.classList.remove("active2");
   nav.classList.remove("active1");
 });
 
