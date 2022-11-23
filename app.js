@@ -14,6 +14,8 @@ const header = document.querySelector(".my-header");
 
 const meetBtn = document.querySelector(".meet-btn");
 
+const listItem = document.querySelectorAll(".list-item");
+
 ham.addEventListener("click", function () {
   nav.classList.toggle("active1");
 });
@@ -38,6 +40,12 @@ homeNav.addEventListener("click", function () {
 meetBtn.addEventListener("click", function () {
   header.style.display = "none";
   skills.classList.add("active2");
+});
+
+listItem.forEach((list, i) => {
+  list.addEventListener("click", function () {
+    list.classList.toggle("active");
+  });
 });
 
 //LOADER
