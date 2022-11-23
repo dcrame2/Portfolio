@@ -1,4 +1,5 @@
 const ham = document.querySelector(".hamburger");
+
 const nav = document.querySelector(".topnav");
 const third = document.querySelector(".third-container");
 const skillsNav = document.querySelector(".skills-nav");
@@ -40,13 +41,15 @@ meetBtn.addEventListener("click", function () {
 });
 
 //LOADER
-var myVar;
+// var myVar;
 
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
-}
+// function myFunction() {
+//   myVar = setTimeout(showPage, 500);
+// }
 
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.querySelector(".right-container").style.display = "block";
-}
+// function showPage() {
+//   document.getElementById("loader").style.display = "none";
+//   document.querySelector(".right-container").style.display = "block";
+// }
+
+window.addEventListener("load", AOS.refresh);

@@ -43,7 +43,7 @@ body {
 }
 
 /* Add animation to "page content" */
-.animate-bottom {
+/* .animate-bottom {
   position: relative;
   -webkit-animation-name: animatebottom;
   -webkit-animation-duration: 1s;
@@ -71,7 +71,7 @@ body {
     bottom: 0;
     opacity: 1;
   }
-}
+} */
 
 /* LARGE DISPLAYS */
 
@@ -123,6 +123,12 @@ body {
   padding: 5px 10px 0;
 }
 
+.name-is {
+  font-size: 18px;
+  color: #f3f3f3;
+  padding-bottom: 10px;
+}
+
 .left-nav {
   position: absolute;
   height: 30vh;
@@ -155,6 +161,7 @@ body {
   font-size: 7rem;
   letter-spacing: 1px;
   color: #bd1616;
+  padding-bottom: 20px;
 }
 
 .main-skill-container {
@@ -183,6 +190,11 @@ h4 {
   color: #bd1616;
 }
 
+.btn:hover {
+  background-color: transparent;
+  color: red;
+  border: 2px solid #ff0000;
+}
 .work {
   margin: 1% 5% 1%;
   background-color: #000;
@@ -205,31 +217,40 @@ h4 {
 }
 
 .profile-pic {
-  border-radius: 2%;
+  /* border-radius: 2%; */
   width: 90%;
-  padding: 6px;
-  border: 1px solid #fff;
-  filter: grayscale(20%);
+  /* padding: 6px; */
+
+  /* filter: hue-rotate(60deg) brigthess(387%); */
+
+  /* border: 1px solid #fff; */
+  /* filter: grayscale(20%); */
 }
 
 .right-p {
   font-size: 1.5rem;
-  color: #fff;
+  color: #ccc;
   letter-spacing: 1px;
 }
 
 .first-container {
   display: flex;
-  width: 100vw;
+  /* width: 100vw; */
   text-align: left;
 }
 
-.pic,
 .my-header {
-  padding-top: 10%;
-  width: 50vw;
+  padding-top: 8%;
+  margin-left: 10%;
+}
+.pic {
+  color: red;
+  padding-top: 8%;
+  width: 40vw;
   flex: wrap;
-  margin: 0 5%;
+  position: absolute;
+  right: 0;
+  /* margin: 0 5% 0 0; */
 }
 
 .my-header.active {
@@ -579,6 +600,7 @@ textarea {
 /* TABLET / iPADS */
 @media (max-width: 768px) and (min-width: 481px) {
   .first-container {
+    flex-wrap: wrap;
     flex-direction: column-reverse;
   }
 
@@ -641,7 +663,9 @@ textarea {
   }
 
   .pic {
-    width: 70%;
+    width: 50%;
+    left: 0;
+    top: 30px;
   }
 
   .name1 {
@@ -653,10 +677,11 @@ textarea {
     font-size: 1rem;
   }
 
-  .my-header {
+  .my-header,
+  .skill-container {
     width: 90vw;
     padding-bottom: 70px;
-    padding-top: 0;
+    padding-top: 300px;
   }
 
   .about-me {

@@ -1,105 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" /> 
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <title>DC</title>
-</head>
-<body onload="myFunction()">
-
-    <div id="loader"></div>
-
+  </head>
+  <!-- <body onload="myFunction()"> -->
+  <body>
+    <!-- <div id="loader"></div> -->
 
     <div class="left-nav">
-        <a href="https://www.facebook.com/dylan.cramer.5" class="fb"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://www.linkedin.com/in/dylan-cramer/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/dcrame2/"><i class="fab fa-github"></i></a>
-        <a href="https://angel.co/u/dylancramer"> <i class="fab fa-angellist"></i></a>
-       
+      <a href="https://www.facebook.com/dylan.cramer.5" class="fb"
+        ><i class="fab fa-facebook-square"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/dylan-cramer/"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <a href="https://github.com/dcrame2/"><i class="fab fa-github"></i></a>
+      <a href="https://angel.co/u/dylancramer">
+        <i class="fab fa-angellist"></i
+      ></a>
     </div>
 
     <div class="hamburger">
-       
-        <i class="fa fa-bars" aria-hidden="true"></i>
+      <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-
-
-   
-    
     <div id="home" class="topnav">
-        <a href="#home" class="home-nav">Home</a>
-        <a href="#skills" class="skills-nav">About Me</a>
-        <a href="#port" class="port-nav">Portfolio</a>
+      <a href="#home" class="home-nav">Home</a>
+      <a href="#skills" class="skills-nav">About Me</a>
+      <a href="#port" class="port-nav">Portfolio</a>
     </div>
 
-    
-
-
-
-<div class="right-container animate-bottom hidden">
-    <div class="first-container">
+    <div class="right-container animate-bottom">
+      <div class="first-container">
         <section class="my-header">
-            <h1 class="name1">Dylan Cramer</h1>
-            <p class="right-p">Full Stack Web Developer from Chicago, IL.</h1>
-            <img class="city" src="img/skyline1.png" alt="skyline">
-            <a class="btn meet-btn">Meet Me</a>  
+          <p data-aos="fade-right" class="name-is">Hi, my name is</p>
+          <h1 class="name1" data-aos="fade-right">Dylan Cramer</h1>
+          <p class="right-p" data-aos="fade-right">
+            Front-End Web Developer from Chicago, IL.
+            <img
+              class="city"
+              data-aos="fade-right"
+              src="img/skyline1.png"
+              alt="skyline"
+            />
+            <a class="btn meet-btn">Meet Me</a>
+          </p>
         </section>
 
         <div id="skills" class="skill-container">
-            <h1 class="name">About</h1> 
-            <p class="about-me">I am a Full Stack Web Developer specializinng in JavaScript. I enjoy technology, whether it's working with teams to get products to market, crafting the user stories for each person, or writing code to solve problems. I love creating websites and applications using modern technologies, but I prefer building web applications that can quickly adapt to other frameworks and languages.  My proficient programming languages and techniques are: </p>
+          <h1 class="name">About</h1>
+          <p class="about-me">
+            I am a Front-End Web Developer specializinng in JavaScript. I enjoy
+            technology, whether it's working with teams to get products to
+            market, crafting the user stories for each person, or writing code
+            to solve problems. I love creating websites and applications using
+            modern technologies, but I prefer building web applications that can
+            quickly adapt to other frameworks and languages. My proficient
+            programming languages and techniques are:
+          </p>
 
-            
-                
-           
+          <div class="main-skill-container">
+            <div class="code-lang">HTML</div>
+            <div class="code-lang">CSS</div>
+            <div class="code-lang">JavaScript</div>
+            <div class="code-lang">React.js</div>
+            <div class="code-lang">Next.js</div>
+            <div class="code-lang">Node.js</div>
+            <div class="code-lang">Strapi</div>
+            <div class="code-lang">WordPress</div>
+            <div class="code-lang">Git</div>
+            <div class="code-lang">RESTful APIs</div>
+          </div>
 
-            <div class="main-skill-container">
-                <div class="code-lang">
-                    HTML
-                </div>
-                <div class="code-lang">
-                    CSS
-                </div>
-                <div class="code-lang">
-                   JavaScript
-                </div>
-                <div class="code-lang">
-                    Node.js
-                </div>
-                <div class="code-lang">
-                    Git
-                </div>
-                <div class="code-lang">
-                    RESTful APIs
-                </div>
-            </div> 
+          <hr class="about-me1" />
 
+          <a href="/img/dc_resume.pdf" download class="btn resume-btn"
+            >Resume <i class="fa fa-download" aria-hidden="true"></i
+          ></a>
+        </div>
 
-            <hr class="about-me1">
-            
-         
-            <a href="/img/dc_resume.pdf" download class="btn resume-btn">Resume <i class="fa fa-download" aria-hidden="true"></i></a> 
-            
-        </div> 
-        
-        <section class="pic ">
-            <img src="img/dc.jpeg" class="profile-pic" alt="">
-        </section>  
-    </div>
-    <div class="third-container">
-        
-        
-
-            <!-- <div class="skill skill1">
+        <section class="pic" data-aos="fade-up">
+          <img src="img/picwish.png" class="profile-pic" alt="" />
+        </section>
+      </div>
+      <div class="third-container">
+        <!-- <div class="skill skill1">
                 <img class="icon" src="img/html.png.crdownload" alt=""> 
                 <i class="icon fas fa-laptop-code"></i> 
                 <p class="right-p">Programming</p>
@@ -113,81 +118,87 @@
                 <i class="icon far fa-lightbulb"></i>
                 <p class="right-p">Critical Thinking</p>
             </div>  -->
-            
-        
-    </div>
-    <div id="port" class="second-container">
-        <section  class= "project-container">
-        <h1 class="name">Recent Projects</h1> 
-        <div class="flex-box">
-
-            <div class="portfolio">
-                <div class="portfolio1">
-                    <img class="greek" src="img/portfolio.png" alt="">
-                    <h3 class="port-name">Portfolio</h3>
-                    <em><h3 class="port-lang">HTML5, CSS3 & JavaScript</h3></em>
-                    <a class="btn" href="https://dylancramer.netlify.app/">Visit</a>
-                </div>
+      </div>
+      <div id="port" class="second-container">
+        <section class="project-container">
+          <h1 data-aos="fade-right" class="name">Recent Projects</h1>
+          <div class="flex-box">
+            <div data-aos="flip-left" class="portfolio">
+              <div class="portfolio1">
+                <img class="greek" src="img/portfolio.png" alt="" />
+                <h3 class="port-name">Portfolio</h3>
+                <em><h3 class="port-lang">HTML5, CSS3 & JavaScript</h3></em>
+                <a class="btn" href="https://dylancramer.netlify.app/">Visit</a>
+              </div>
             </div>
 
-            <div class="portfolio">
-                <div class="portfolio1">
-                    <img class="greek" src="img/starsandstripes.png" alt="">
-                    <h3 class="port-name">Stars & Stripes</h3>
-                    <em><h3 class="port-lang">WordPress, HTML5, CSS3, JavaScript</h3></em>
-                    <a class="btn" href="https://carsandstripesforeverinc.com/">Vist</a>
-                </div>
+            <div data-aos="flip-right" class="portfolio">
+              <div class="portfolio1">
+                <img class="greek" src="img/starsandstripes.png" alt="" />
+                <h3 class="port-name">Stars & Stripes</h3>
+                <em
+                  ><h3 class="port-lang">
+                    WordPress, HTML5, CSS3, JavaScript
+                  </h3></em
+                >
+                <a class="btn" href="https://carsandstripesforeverinc.com/"
+                  >Vist</a
+                >
+              </div>
             </div>
 
-            <div class="portfolio">
-                <div class="portfolio1">
-                    <img class="greek" src="img/gabanddyl.png" alt="">
-                    <h3 class="port-name">Gab & Dyl</h3>
-                    <em><h3 class="port-lang">HTML5, CSS3 & JavaScript</h3></em>
-                    <a class="btn" href="https://gabanddyl.netlify.app/">Visit</a>
-                </div>
-            </div>
-          
-
-            <div class="portfolio">
-                <div class="portfolio1">
-                    <img class="greek" src="img/col.png" alt="">
-                    <h3 class="port-name">Chain O' Lakes Marina</h3>
-                <em><h3 class="port-lang">HTML5, CSS3, JavaScript & Bootstrap</h3></em>
-                <a class="btn" href="https://chainolakesmarina.netlify.app/">Visit</a>
-                </div>
+            <div data-aos="flip-right" class="portfolio">
+              <div class="portfolio1">
+                <img class="greek" src="img/gabanddyl.png" alt="" />
+                <h3 class="port-name">Gab & Dyl</h3>
+                <em><h3 class="port-lang">HTML5, CSS3 & JavaScript</h3></em>
+                <a class="btn" href="https://gabanddyl.netlify.app/">Visit</a>
+              </div>
             </div>
 
-           
-            <div class="portfolio">
-                <div class="portfolio1">
-                    <img class="greek" src="img/greeklife.png" alt="">
-                    <h3 class="port-name">Greek Life Website</h3>
-                    <em><h3 class="port-lang">HTML5, CSS3, JavaScript & Bootstrap</h3></em>
-                    <a class="btn" href="http://greeklifeatisu.epizy.com/">Visit</a>
-                </div>
+            <div data-aos="flip-right" class="portfolio">
+              <div class="portfolio1">
+                <img class="greek" src="img/col.png" alt="" />
+                <h3 class="port-name">Chain O' Lakes Marina</h3>
+                <em
+                  ><h3 class="port-lang">
+                    HTML5, CSS3, JavaScript & Bootstrap
+                  </h3></em
+                >
+                <a class="btn" href="https://chainolakesmarina.netlify.app/"
+                  >Visit</a
+                >
+              </div>
             </div>
 
-
-            <div class="portfolio">
-                <div class="portfolio1">
-                    <img class="greek" src="img/pig-game.png" alt="">
-                    <h3 class="port-name">Pig Game</h3>
-                    <em><h3 class="port-lang">HTML5, CSS3 & JavaScript</h3></em>
-                    <a class="btn" href="https://dicepiggygame.netlify.app/">Play</a>
-                </div>
+            <div data-aos="flip-right" class="portfolio">
+              <div class="portfolio1">
+                <img class="greek" src="img/greeklife.png" alt="" />
+                <h3 class="port-name">Greek Life Website</h3>
+                <em
+                  ><h3 class="port-lang">
+                    HTML5, CSS3, JavaScript & Bootstrap
+                  </h3></em
+                >
+                <a class="btn" href="http://greeklifeatisu.epizy.com/">Visit</a>
+              </div>
             </div>
 
-           
+            <div data-aos="flip-right" class="portfolio">
+              <div class="portfolio1">
+                <img class="greek" src="img/pig-game.png" alt="" />
+                <h3 class="port-name">Pig Game</h3>
+                <em><h3 class="port-lang">HTML5, CSS3 & JavaScript</h3></em>
+                <a class="btn" href="https://dicepiggygame.netlify.app/"
+                  >Play</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
-        </div>
-    </section>
-    </div>
-
-    
-    
-
-    <!-- <div class="contact-forum">
+      <!-- <div class="contact-forum">
         <h1 class="name">Contact</h1>
         <div class="forum">
             <div class="label-flex">
@@ -205,17 +216,15 @@
         </div>
     </div> -->
 
-    <div class="footer-container">
+      <div class="footer-container">
         <p class="right-p1">Created by Dylan Cramer</p>
-
+      </div>
     </div>
 
-    
-</div>
-
-
-
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
