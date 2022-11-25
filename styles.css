@@ -795,7 +795,7 @@ section.services-container {
 
 input,
 textarea {
-  width: 70%;
+  width: 100%;
 }
 
 .city {
@@ -1235,7 +1235,7 @@ textarea {
 
   .contact-forum .forum .labels input,
   .contact-forum .forum .labels textarea {
-    width: 215px;
+    width: 315px;
   }
 
   .map-container {
@@ -1256,5 +1256,6 @@ textarea {
 
   .labels {
     gap: 8px;
+    flex-direction: column;
   }
 }
