@@ -17,6 +17,8 @@
       integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
       crossorigin="anonymous"
     />
+    <!-- <script src="https://use.fontawesome.com/903acfb9d9.js"></script> -->
+
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap"
@@ -27,100 +29,169 @@
   <!-- <body onload="myFunction()"> -->
   <body>
     <!-- <div id="loader"></div> -->
+    <nav>
 
-    <div class="left-nav">
-      <a href="https://www.facebook.com/dylan.cramer.5" class="fb"
-        ><i class="fab fa-facebook-square"></i
-      ></a>
-      <a href="https://www.linkedin.com/in/dylan-cramer/"
-        ><i class="fab fa-linkedin"></i
-      ></a>
-      <a href="https://github.com/dcrame2/"><i class="fab fa-github"></i></a>
-      <a href="https://angel.co/u/dylancramer">
-        <i class="fab fa-angellist"></i
-      ></a>
-    </div>
+        <img id="logo" src="img/logo.png" />
+        <div class="hamburger">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
 
-    <div class="hamburger">
-      <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <div id="home" class="topnav">
-      <a href="#home" class="home-nav">Home</a>
-      <a href="#skills" class="skills-nav">About Me</a>
-      <a href="#port" class="port-nav">Portfolio</a>
-    </div>
+          <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work-history">Work History</a></li>
+                <li><a href="#port">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
 
-    <div class="right-container animate-bottom">
+            </ul>
+
+          </div>
+          <div id="nav" class="topnav">
+            <a href="#home" class="home-nav mobile-nav">Home</a>
+            <a href="#skills" class="skills-nav mobile-nav">About Me</a>
+            <a href="#services" class="mobile-nav">Services</a>
+            <a href="#work-history" class="mobile-nav">Work History</a>
+            <a href="#port" class="port-nav mobile-nav">Projects</a>
+            <a href="#contact" class="mobile-nav">Contact</a>
+          </div>
+
+    </nav>
+
+
+  
+
+    <div id="home" class="right-container animate-bottom">
       <div class="first-container">
         <section class="my-header">
           <p data-aos="fade-right" class="name-is">Hi, my name is</p>
           <h1 class="name1" data-aos="fade-right">Dylan Cramer</h1>
           <p class="right-p" data-aos="fade-right">
-            Front-End Web Developer from Chicago, IL.
+            Frontend Web Developer from Chicago
             <img
               class="city"
               data-aos="fade-right"
               src="img/skyline1.png"
               alt="skyline"
             />
-            <a data-aos="fade-right" class="btn meet-btn">Meet Me</a>
+            <a data-aos="fade-right" class="btn meet-btn">Contact Me</a>
           </p>
         </section>
 
-        <div id="skills" class="skill-container">
-          <h1 class="name">About</h1>
-          <p class="about-me">
-            I am a Front-End Web Developer specializinng in JavaScript. I enjoy
-            technology, whether it's working with teams to get products to
-            market, crafting the user stories for each person, or writing code
-            to solve problems. I love creating websites and applications using
-            modern technologies, but I prefer building web applications that can
-            quickly adapt to other frameworks and languages. My proficient
-            programming languages and techniques are:
-          </p>
+        <div class="pic" data-aos="fade-left">
+          <img src="img/picwish.png" class="profile-pic" alt="" />
+        </div>
+      </div>
 
-          <div class="main-skill-container">
-            <div class="code-lang">HTML</div>
-            <div class="code-lang">CSS</div>
-            <div class="code-lang">JavaScript</div>
-            <div class="code-lang">React.js</div>
-            <div class="code-lang">Next.js</div>
-            <div class="code-lang">Node.js</div>
-            <div class="code-lang">Strapi</div>
-            <div class="code-lang">WordPress</div>
-            <div class="code-lang">Git</div>
-            <div class="code-lang">RESTful APIs</div>
+      <section id="skills" class="skill-container project-container">
+        <h1 data-aos="fade-right" class="name">About</h1>
+        <hr class="about-me1" />
+        <div class="about-me-container">
+          <div class="about-me-inner-container">
+            <p class="about-me">
+              I am a Front-End Web Developer specializinng in JavaScript. I
+              enjoy technology, whether it's working with teams to get products
+              to market, crafting the user stories for each person, or writing
+              code to solve problems. I love creating websites and applications
+              using modern technologies, but I prefer building web applications
+              that can quickly adapt to other frameworks and languages.
+            </p>
+            <p class="about-me">
+              I graduated from Illinois State University in 2018 with a
+              Bachelors of Science in Information Systems - Web Application
+              Development
+            </p>
+            <!-- <a href="/img/dc_resume.pdf" download class="btn resume-btn"
+              >Resume <i class="fa fa-download" aria-hidden="true"></i
+            ></a> -->
           </div>
 
-          <hr class="about-me1" />
-
-          <a href="/img/dc_resume.pdf" download class="btn resume-btn"
-            >Resume <i class="fa fa-download" aria-hidden="true"></i
-          ></a>
+          <div class="main-skill-container">
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="300">
+              HTML<i class="fa fa-html5" aria-hidden="true"></i>
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="400">
+              CSS<i class="fa fa-css3" aria-hidden="true"></i>
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="500">
+              JavaScript<i class="fa-brands fa-js"></i>
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="600">
+              React.js<i class="fa-brands fa-react"></i>
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="700">
+              Next.js<img src="img/next-dot-js-svgrepo-com.svg" />
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="800">
+              Node.js<i class="fa-brands fa-node-js"></i>
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="1000">
+              Java<i class="fa-brands fa-java"></i>
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="1100">
+              PHP<i class="fa-brands fa-php"></i>
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="1200">
+              Strapi<img src="img/strapi-icon-svgrepo-com.svg" />
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="1300">
+              WordPress<i class="fa-brands fa-wordpress"></i>
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="1400">
+              Git<i class="fa-brands fa-git"></i>
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="1500">
+              RESTful API<i class="fa fa-network-wired"></i>
+            </div>
+          </div>
         </div>
-
-        <section class="pic" data-aos="fade-up">
-          <img src="img/picwish.png" class="profile-pic" alt="" />
-        </section>
-      </div>
-      <section class="work-history-container">
+      </section>
+      <section id="services" class="services-container">
+        <!-- <h1 data-aos="fade-right" class="name">Services</h1> -->
+        <div class="skill skill1">
+          
+          <i data-aos="fade-up"  class="icon fas fa-laptop-code"></i>
+          <h3 class="right-p">Developer<h3/>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore,
+            eaque.
+          </p>
+        </div>
+        <div class="skill skill2">
+          <i data-aos="fade-up" class="icon fas fa-sitemap"></i>
+          <h3 class="right-p">Designer</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore,
+            eaque.
+          </p>
+        </div>
+        <div class="skill skill3">
+          <i data-aos="fade-up" class="icon far fa-lightbulb"></i>
+          <h3 class="right-p">Support</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore,
+            eaque.
+          </p>
+        </div>
+      </section>
+      <section id="work-history" class="work-history-container project-container">
         <h1 data-aos="fade-right" class="name">Work History</h1>
+        <hr class="about-me1" />
 
         <div class="work-history">
           <div class="tab-work-history">
             <ul>
-              <li class="list-item active">Impact Networking Inc</li>
-              <li class="list-item">Stars & Stripes Forever</li>
-              <li class="list-item">SOGO Marketing</li>
-              <li class="list-item">TEXT2DRIVE LLC</li>
+              <li class="list-item job1 active">Impact Networking</li>
+              <li class="list-item job2">Stars & Stripes Forever</li>
+              <li class="list-item job3">SOGO Marketing</li>
+              <li class="list-item job4">TEXT2DRIVE LLC</li>
             </ul>
           </div>
 
           <div class="single-work-history-container">
-            <div class="single-work-history">
-              <h3>
-                Frontend Web Developer <span> @ Impact Networking Inc</span>
-              </h3>
+            <div class="single-work-history work1">
+              <h3>Frontend Web Developer <span> @ Impact Networking</span></h3>
               <h6>June 2022 - Present</h6>
               <ul>
                 <li>
@@ -130,8 +201,7 @@
                 <li>
                   Work with a variety of different languages, platforms,
                   frameworks, and content management systems such as JavaScript,
-                  TypeScript, Gatsby, React, Craft, WordPress, Prismic, and
-                  Netlify
+                  TypeScript, Strapi, React, WordPress, Next.js, and SASS
                 </li>
                 <li>
                   Communicate with multi-disciplinary teams of engineers,
@@ -139,26 +209,68 @@
                 </li>
               </ul>
             </div>
+
+            <div class="single-work-history work2 hidden">
+              <h3>
+                Freelance Web Developer
+                <span> @ Stars & Stripes Forever</span>
+              </h3>
+              <h6>November 2021 - May 2022</h6>
+              <ul>
+                <li>
+                  Created eCommerce website using HTML/CSS & JavaScript with
+                  GoDaddy as the Content Management System
+                </li>
+                <li>
+                  Monthly managing of the website by adding new products to
+                  inventory & content change requests.
+                </li>
+                <li>Meetings with client to ensure transparency</li>
+              </ul>
+            </div>
+
+            <div class="single-work-history hidden work3">
+              <h3>Freelance Web Developer <span> @ SOGO Marketing</span></h3>
+              <h6>November 2018 - February 2019</h6>
+              <ul>
+                <li>
+                  Creating & maintaining clients WordPress websites using
+                  JavaScript & HTML/CSS
+                </li>
+                <li>
+                  Android Mobile Application new feature implementation & bug
+                  fixes
+                </li>
+              </ul>
+            </div>
+
+            <div class="single-work-history work4 hidden">
+              <h3>Tech Specialist <span> @ TEXT2DRIVE LLC</span></h3>
+              <h6>November 2018 - May 2022</h6>
+              <ul>
+                <li>
+                  Implementing & deploying our mobile Online Bill Pay solution
+                  through our gateway provider. Connecting our software to
+                  dealerships Merchant Accounts through APIs.
+                </li>
+                <li>
+                  Installing & troubleshooting EMV Chip Readers to the
+                  dealerships Internet network.
+                </li>
+                <li>
+                  Completing Cost Analysis by collecting and analyzing our
+                  dealership’s credit card processing and comparing it to what
+                  we can save them.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <!-- <div class="skill skill1">
-          <img class="icon" src="img/html.png.crdownload" alt="" />
-          <i class="icon fas fa-laptop-code"></i>
-          <p class="right-p">Programming</p>
-        </div>
-        <div class="skill skill2">
-          <i class="icon fas fa-sitemap"></i>
-
-          <p class="right-p">Organization</p>
-        </div>
-        <div class="skill skill3">
-          <i class="icon far fa-lightbulb"></i>
-          <p class="right-p">Critical Thinking</p>
-        </div> -->
       </section>
       <div id="port" class="second-container">
         <section class="project-container">
           <h1 data-aos="fade-right" class="name">Recent Projects</h1>
+          <hr class="about-me1" />
           <div class="flex-box">
             <div data-aos="flip-right" class="portfolio">
               <div class="portfolio1">
@@ -254,7 +366,19 @@
     </div> -->
 
       <div class="footer-container">
-        <p class="right-p1">Created by Dylan Cramer</p>
+        <div class="left-nav">
+            <a href="https://www.facebook.com/dylan.cramer.5" class="fb"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+           <a href="https://www.linkedin.com/in/dylan-cramer/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/dcrame2/"><i class="fab fa-github"></i></a>
+            <a href="https://angel.co/u/dylancramer">
+              <i class="fab fa-angellist"></i
+            ></a>
+          </div>
+        <h3 class="right-p1">Created by Dylan Cramer</h3>
       </div>
     </div>
 
@@ -262,6 +386,10 @@
     <script>
       AOS.init();
     </script>
+    <script
+      src="https://kit.fontawesome.com/41155fb5e6.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js"></script>
   </body>
 </html>
