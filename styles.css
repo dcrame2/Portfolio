@@ -348,6 +348,7 @@ section.services-container {
 
 .services-container .name {
   color: #000;
+  text-align: left;
 }
 
 .code-lang {
@@ -651,6 +652,7 @@ section.services-container {
 .services-container .skill p {
   text-align: center;
   font-size: 16px;
+  padding: 0 12px;
 }
 
 /* Contact */
