@@ -290,10 +290,10 @@ h1:before {
 
 .left-nav {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+
   /* padding-right: 30px; */
   /* height: 30vh; */
   /* z-index: 6; */
@@ -816,6 +816,19 @@ textarea {
   text-align: center;
   display: flex;
   text-decoration: underline #bd1616 2px;
+}
+
+.footer-container .left-nav ul {
+  display: flex;
+  gap: 8px;
+  width: 30px;
+
+  justify-content: center;
+}
+.footer-container .left-nav ul li {
+  list-style-type: none;
+
+  justify-content: center;
 }
 
 .fab {
