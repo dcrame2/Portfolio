@@ -47,10 +47,10 @@ ham.addEventListener("click", function () {
 //   nav.classList.remove("active1");
 // });
 
-meetBtn.addEventListener("click", function () {
-  header.style.display = "none";
-  skills.classList.add("active2");
-});
+// meetBtn.addEventListener("click", function () {
+//   header.style.display = "none";
+//   skills.classList.add("active2");
+// });
 
 listItem.forEach((list, i, arr) => {
   list.addEventListener("click", function (e) {
