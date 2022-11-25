@@ -322,6 +322,7 @@ h1:before {
 
 .name1 {
   font-size: 7rem;
+  z-index: 2;
   letter-spacing: 1px;
   color: #bd1616;
   padding-bottom: 20px;
