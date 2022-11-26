@@ -54,13 +54,16 @@ nav .navbar ul li {
   list-style-type: none;
   width: auto;
   cursor: pointer;
+  color: #fff;
 }
+
 nav .navbar ul a:visited {
   color: #fff;
 }
 
 nav .navbar ul a {
   text-decoration: none;
+  color: #fff;
 }
 
 nav .navbar ul li a:hover {
