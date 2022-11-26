@@ -91,16 +91,15 @@
           <div class="about-me-inner-container">
             <p class="about-me">
               I am a Front-End Web Developer specializinng in JavaScript. I
-              enjoy technology, whether it's working with teams to get products
+              strive for technology, whether it's working with teams to get products
               to market, crafting the user stories for each person, or writing
               code to solve problems. I love creating websites and applications
-              using modern technologies, but I prefer building web applications
-              that can quickly adapt to other frameworks and languages.
+              using modern technologies which you can see what I use below.
             </p>
             <p class="about-me">
-              I graduated from Illinois State University in 2018 with a
-              Bachelors of Science in Information Systems - Web Application
-              Development
+              My school background consists of receiving my Bachelors of Science in Information Systems - Web Application
+              Development from Illinois State University in 2018. Check out my <a href="#work-history">work history!</a>
+              
             </p>
             <!-- <a href="/img/dc_resume.pdf" download class="btn resume-btn"
               >Resume <i class="fa fa-download" aria-hidden="true"></i
@@ -152,20 +151,20 @@
             <h1 data-aos="fade-right" data-aos-duration="600" class="name">Services</h1>
             <hr class="about-me1" />
         </div>
-       
+       <div class="services-inner-container">
         <div class="skill skill1">
           
-          <i data-aos="fade-up"  class="icon fas fa-laptop-code"></i>
+          <i data-aos="fade-up" data-aos-duration="800" class="icon fas fa-laptop-code"></i>
           <h3 class="right-p">Developer<h3/>
           <p>
             I can develop your website with modern technology
           </p>
         </div>
         <div class="skill skill2">
-          <i data-aos="fade-up" data-aos-duration="800"  class="icon fas fa-sitemap"></i>
+          <i data-aos="fade-up" data-aos-duration="900"  class="icon fas fa-sitemap"></i>
           <h3 class="right-p">Designer</h3>
           <p>
-            I can design your website to follow your business color scheme
+            I can design your website to follow the style of your business
           </p>
         </div>
         <div class="skill skill3">
@@ -175,6 +174,7 @@
            I offer support and maintence on any site
           </p>
         </div>
+    </div>
      
       </section>
       <section id="work-history" class="work-history-container project-container">
@@ -203,7 +203,7 @@
                 <li>
                   Work with a variety of different languages, platforms,
                   frameworks, and content management systems such as JavaScript,
-                  TypeScript, Strapi, React, WordPress, Next.js, and SASS
+                 Strapi, React, WordPress, Next.js, and SASS
                 </li>
                 <li>
                   Communicate with multi-disciplinary teams of engineers,
@@ -348,27 +348,21 @@
         <h1 data-aos="fade-right" class="name">Contact Me</h1>
         <hr class="about-me1" />
         <div class="contact-inner-container">
+            <!-- <iframe src="https://www.powr.io/form-builder/u/250dc71e_1669430405#platform=iframe" style="width:75%;" height="500px" frameborder="0"></iframe> -->
             <div class="forum">
-                <!-- <p>Free consultation on building your website or web application!</p> -->
-                <form action="action_page.php">
+             
+                <form method="post" action="contact.php">
                 <div class="labels">
               <label for="fname">Full Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <input  type="text" id="fname" name="message" placeholder="Your name..">
             </div>
         <div class="labels">
               <label for="email">Email</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your email address..">
+              <input type="text" id="lname" name="message" placeholder="Your email address..">
             </div>
-          
-              <!-- <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select> -->
             <div class="labels">
               <label for="subject">Message</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
             </div>
             
               <input class="btn" type="submit" value="Submit">
@@ -439,3 +433,6 @@
     <script src="app.js"></script>
   </body>
 </html>
+
+
+

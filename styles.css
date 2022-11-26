@@ -8,6 +8,14 @@ body {
   background-color: #313131;
 }
 
+.about-me a {
+  color: #fff;
+}
+
+.about-me a:hover {
+  color: #bd1616;
+}
+
 /* NAVigation */
 
 nav {
@@ -335,13 +343,13 @@ h1:before {
 }
 
 section.services-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
   flex-wrap: wrap;
   background-color: #bd1616;
   /* height: 400px; */
-  padding: 120px 0;
+  padding: 120px 10%;
   gap: 50px;
   /* opacity: 0.7; */
 }
@@ -349,9 +357,6 @@ section.services-container {
 .services-container .name {
   color: #000;
   text-align: left;
-}
-
-.services-header {
 }
 
 .code-lang {
@@ -659,6 +664,13 @@ section.services-container {
   /* margin: 0 5%; */
 }
 
+.services-inner-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
 .skill-container.active2 {
   display: flex;
   height: 50%;
@@ -888,8 +900,14 @@ textarea {
   color: #fff;
 }
 
-/* DESKTOP  */
-@media (max-width: 1200px) and (min-width: 1025px) {
+/* DESKTOP  and (min-width: 1025px)*/
+@media (max-width: 1200px) {
+  .contact-inner-container {
+    gap: 30px;
+  }
+  .services-inner-container {
+    gap: 30px;
+  }
   .name1 {
     font-size: 5.5rem;
   }
@@ -908,6 +926,11 @@ textarea {
 
   .resume-btn {
     width: 28%;
+  }
+
+  .skill {
+    width: 250px;
+    height: 250px;
   }
 }
 
@@ -1119,6 +1142,7 @@ textarea {
   }
   .skill {
     margin: 0 5%;
+    height: 300px;
     width: unset;
   }
 
@@ -1214,7 +1238,7 @@ textarea {
 
   section.services-container {
     height: auto;
-    padding: 150px 0;
+    padding: 150px 5%;
   }
 
   .btn {
@@ -1266,9 +1290,9 @@ textarea {
     width: 90px;
     font-size: 16px;
   }
+}
 
-  .labels {
-    gap: 8px;
-    flex-direction: column;
-  }
+.labels {
+  gap: 8px;
+  flex-direction: column;
 }
