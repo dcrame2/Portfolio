@@ -20,6 +20,8 @@ const workHistory = document.querySelectorAll(".single-work-history");
 
 const mobileNav = document.querySelectorAll(".mobile-nav");
 
+const xBtn = document.querySelector(".x-btn");
+
 mobileNav.forEach((item, i, arr) => {
   item.addEventListener("click", () => {
     nav.classList.toggle("active1");
@@ -28,6 +30,14 @@ mobileNav.forEach((item, i, arr) => {
 
 ham.addEventListener("click", function () {
   nav.classList.toggle("active1");
+  ham.classList.add("hidden");
+  xBtn.classList.remove("hidden");
+});
+
+xBtn.addEventListener("click", function () {
+  nav.classList.toggle("active1");
+  ham.classList.remove("hidden");
+  xBtn.classList.add("hidden");
 });
 
 // skillsNav.addEventListener("click", function () {
