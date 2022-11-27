@@ -25,6 +25,8 @@ const xBtn = document.querySelector(".x-btn");
 mobileNav.forEach((item, i, arr) => {
   item.addEventListener("click", () => {
     nav.classList.toggle("active1");
+    xBtn.classList.add("hidden");
+    ham.classList.remove("hidden");
   });
 });
 
