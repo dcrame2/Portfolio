@@ -368,18 +368,21 @@
             <!-- <iframe src="https://www.powr.io/form-builder/u/250dc71e_1669430405#platform=iframe" style="width:75%;" height="500px" frameborder="0"></iframe> -->
             <div class="forum">
              
-                <form method="post" action="contact.php">
+                <form method="POST" action="https://formsubmit.co/dcrame2@gmail.com">
+                    <input type="hidden" name="_subject" value="New submission from website!">
+                    <input type="hidden" name="_next" value="https://dylancramer.netlify.app/thanks.html">
+                    <input type="hidden" name="_captcha" value="false">
                 <div class="labels">
-              <label for="fname">Full Name</label>
-              <input  type="text" id="fname" name="message" placeholder="Your name..">
+              <label for="fname">Full Name*</label>
+              <input  type="text" id="fname" name="fname" placeholder="Your name..." required>
             </div>
         <div class="labels">
-              <label for="email">Email</label>
-              <input type="text" id="lname" name="message" placeholder="Your email address..">
+              <label for="email">Email*</label>
+              <input type="text" id="lname" name="lname" placeholder="Email address..." required>
             </div>
             <div class="labels">
-              <label for="subject">Message</label>
-              <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
+              <label for="subject">Message*</label>
+              <textarea id="subject" name="message" placeholder="Please give me as much as details as you can" style="height:200px" required></textarea>
             </div>
             
               <input class="btn" type="submit" value="Submit">

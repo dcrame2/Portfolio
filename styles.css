@@ -67,7 +67,7 @@ nav .navbar ul a {
 }
 
 nav .navbar ul li a:hover {
-  color: red;
+  color: #bd1616;
   border-bottom: 3px solid #bd1616;
 }
 
