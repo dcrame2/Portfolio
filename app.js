@@ -72,42 +72,40 @@ listItem.forEach((list, i, arr) => {
       arr[0].classList.add("active");
       arr[1].classList.remove("active");
       arr[2].classList.remove("active");
-      // arr[3].classList.remove("active");
+      arr[3].classList.remove("active");
       workHistory[0].classList.remove("hidden");
       workHistory[1].classList.add("hidden");
       workHistory[2].classList.add("hidden");
-      // workHistory[3].classList.add("hidden");
+      workHistory[3].classList.add("hidden");
     } else if (e.target.classList.contains("job2")) {
       arr[0].classList.remove("active");
       arr[1].classList.add("active");
       arr[2].classList.remove("active");
-      // arr[3].classList.remove("active");
+      arr[3].classList.remove("active");
       // list.classList.add("active");
       workHistory[0].classList.add("hidden");
       workHistory[1].classList.remove("hidden");
       workHistory[2].classList.add("hidden");
-      // workHistory[3].classList.add("hidden");
-    } else {
-      // (e.target.classList.contains("job3"))
+      workHistory[3].classList.add("hidden");
+    } else if (e.target.classList.contains("job3")) {
       arr[0].classList.remove("active");
       arr[1].classList.remove("active");
       arr[2].classList.add("active");
-      // arr[3].classList.remove("active");
+      arr[3].classList.remove("active");
       workHistory[0].classList.add("hidden");
       workHistory[1].classList.add("hidden");
       workHistory[2].classList.remove("hidden");
-      // workHistory[3].classList.add("hidden");
+      workHistory[3].classList.add("hidden");
+    } else {
+      arr[0].classList.remove("active");
+      arr[1].classList.remove("active");
+      arr[2].classList.remove("active");
+      arr[3].classList.add("active");
+      workHistory[0].classList.add("hidden");
+      workHistory[1].classList.add("hidden");
+      workHistory[2].classList.add("hidden");
+      workHistory[3].classList.remove("hidden");
     }
-    // } else {
-    //   arr[0].classList.remove("active");
-    //   arr[1].classList.remove("active");
-    //   arr[2].classList.remove("active");
-    //   // arr[3].classList.add("active");
-    //   workHistory[0].classList.add("hidden");
-    //   workHistory[1].classList.add("hidden");
-    //   workHistory[2].classList.add("hidden");
-    //   // workHistory[3].classList.remove("hidden");
-    // }
   });
 });
 
