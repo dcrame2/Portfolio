@@ -1,192 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" /> 
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap" rel="stylesheet">
-    <title>DC</title>
-</head>
-<body onload="myFunction()">
+  <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KNTFLSD');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
 
-    <div id="loader"></div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <!-- <script src="https://use.fontawesome.com/903acfb9d9.js"></script> -->
+
+    <link rel="icon" type="image/x-icon" href="/img/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dylan Cramer</title>
+  </head>
+  <!-- <body onload="myFunction()"> -->
+  <body>
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNTFLSD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    <!-- <div id="loader"></div> -->
+    <nav>
+
+        <img href="/" id="logo" src="img/logo.png" />
+        <div class="hamburger">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+
+          <div class="x-btn hidden">
+            <i class="fa-solid fa-x"></i>
+          </div>
+
+          <div class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#skills">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work-history">Work History</a></li>
+                <li><a href="#port">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+          </div>
+          <div id="nav" class="topnav">
+            <a href="/" class="home-nav mobile-nav">Home</a>
+            <a href="#skills" class="skills-nav mobile-nav">About Me</a>
+            <a href="#services" class="mobile-nav">Services</a>
+            <a href="#work-history" class="mobile-nav">Work History</a>
+            <a href="#port" class="port-nav mobile-nav">Projects</a>
+            <a href="#contact" class="mobile-nav">Contact</a>
+          </div>
+
+    </nav>
 
 
-    <div class="left-nav">
-        <a href="https://www.facebook.com/dylan.cramer.5" class="fb"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://www.linkedin.com/in/dylan-cramer/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/dcrame2/"><i class="fab fa-github"></i></a>
-        <a href="https://angel.co/u/dylancramer"> <i class="fab fa-angellist"></i></a>
-       
-    </div>
+  
 
-    <div class="hamburger">
-       
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-
-
-   
-    
-    <div id="home" class="topnav">
-        <a href="#home" class="home-nav">Home</a>
-        <a href="#skills" class="skills-nav">About Me</a>
-        <a href="#port" class="port-nav">Portfolio</a>
-    </div>
-
-    
-
-
-
-<div class="right-container animate-bottom hidden">
-    <div class="first-container">
+    <div id="home" class="right-container animate-bottom">
+      <div class="first-container">
         <section class="my-header">
-            <h1 class="name1">Dylan Cramer</h1>
-            <p class="right-p">Full Stack Web Developer from Chicago, IL.</h1>
-            <img class="city" src="img/skyline1.png" alt="skyline">
-            <a class="btn meet-btn">Meet Me</a>  
+          <p data-aos="fade-right"  data-aos-duration="400" class="name-is">Hi, my name is</p>
+          <h1 class="name1" data-aos="fade-right"  data-aos-duration="500" >Dylan Cramer</h1>
+          <p class="right-p" data-aos="fade-right"  data-aos-duration="600">
+            Front End Web Developer from Chicago
+            <img
+              class="city"
+              data-aos="fade-right"  data-aos-duration="700"
+              src="img/skyline1.png"
+              alt="skyline"
+            />
+            <a href="#contact" data-aos="fade-right"  data-aos-duration="800" class="btn meet-btn">Contact Me</a>
+          </p>
         </section>
 
-        <div id="skills" class="skill-container">
-            <h1 class="name">About</h1> 
-            <p class="about-me">I am a Full Stack Web Developer specializinng in JavaScript. I enjoy technology, whether it's working with teams to get products to market, crafting the user stories for each person, or writing code to solve problems. I love creating websites and applications using modern technologies, but I prefer building web applications that can quickly adapt to other frameworks and languages.  My proficient programming languages and techniques are: </p>
-
-            
-                
-           
-
-            <div class="main-skill-container">
-                <div class="code-lang">
-                    HTML
-                </div>
-                <div class="code-lang">
-                    CSS
-                </div>
-                <div class="code-lang">
-                   JavaScript
-                </div>
-                <div class="code-lang">
-                    Node.js
-                </div>
-                <div class="code-lang">
-                    Git
-                </div>
-                <div class="code-lang">
-                    RESTful APIs
-                </div>
-            </div> 
-
-
-            <hr class="about-me1">
-            
-         
-            <a href="/img/dc_resume.pdf" download class="btn resume-btn">Resume <i class="fa fa-download" aria-hidden="true"></i></a> 
-            
-        </div> 
-        
-        <section class="pic ">
-            <img src="img/dc.jpeg" class="profile-pic" alt="">
-        </section>  
-    </div>
-    <div class="third-container">
-        
-        
-
-            <!-- <div class="skill skill1">
-                <img class="icon" src="img/html.png.crdownload" alt=""> 
-                <i class="icon fas fa-laptop-code"></i> 
-                <p class="right-p">Programming</p>
-            </div>
-            <div class="skill skill2">
-                <i class="icon fas fa-sitemap"></i>
-                
-                <p class="right-p">Organization</p>
-            </div>
-            <div class="skill skill3">
-                <i class="icon far fa-lightbulb"></i>
-                <p class="right-p">Critical Thinking</p>
-            </div>  -->
-            
-        
-    </div>
-    <div id="port" class="second-container">
-        <section  class= "project-container">
-        <h1 class="name">Recent Projects</h1> 
-        <div class="flex-box">
-          
-
-            <div class="portfolio">
-                <div class="portfolio1">
-                    <img class="greek" src="img/col.png" alt="">
-                    <h3 class="port-name">Chain O' Lakes Marina</h3>
-                <em><h3 class="port-lang">HTML5, CSS3, JavaScript & Bootstrap</h3></em>
-                <a class="btn" href="https://chainolakesmarina.netlify.app/">Visit</a>
-                </div>
-            </div>
-
-            <div class="portfolio">
-                <div class="portfolio1">
-                    <img class="greek" src="img/gabanddyl.png" alt="">
-                    <h3 class="port-name">Gab & Dyl</h3>
-                    <em><h3 class="port-lang">HTML5, CSS3 & JavaScript</h3></em>
-                    <a class="btn" href="http://gabanddyl.epizy.com/">Visit</a>
-                </div>
-            </div>
-
-            <div class="portfolio">
-                <div class="portfolio1">
-                    <img class="greek" src="img/portfolio.png" alt="">
-                    <h3 class="port-name">Portfolio</h3>
-                    <em><h3 class="port-lang">HTML5, CSS3 & JavaScript</h3></em>
-                    <a class="btn" href="https://dylancramer.netlify.app/">Visit</a>
-                </div>
-            </div>
-
-            <div class="portfolio">
-                <div class="portfolio1">
-                    <img class="greek" src="img/starsandstripes.png" alt="">
-                    <h3 class="port-name">Stars & Stripes</h3>
-                    <em><h3 class="port-lang">WordPress, HTML5, CSS3, JavaScript</h3></em>
-                    <a class="btn" href="https://carsandstripesforeverinc.com/">Vist</a>
-                </div>
-            </div>
-
-            <div class="portfolio">
-                <div class="portfolio1">
-                    <img class="greek" src="img/greeklife.png" alt="">
-                    <h3 class="port-name">Greek Life Website</h3>
-                    <em><h3 class="port-lang">HTML5, CSS3, JavaScript & Bootstrap</h3></em>
-                    <a class="btn" href="http://greeklifeatisu.epizy.com/">Visit</a>
-                </div>
-            </div>
-
-
-            <div class="portfolio">
-                <div class="portfolio1">
-                    <img class="greek" src="img/pig-game.png" alt="">
-                    <h3 class="port-name">Pig Game</h3>
-                    <em><h3 class="port-lang">HTML5, CSS3 & JavaScript</h3></em>
-                    <a class="btn" href="https://dicepiggygame.netlify.app/">Play</a>
-                </div>
-            </div>
-
-           
-
+        <div class="pic" data-aos="fade-left" data-aos-duration="1500">
+          <img src="img/picwish.png" class="profile-pic" alt="" />
         </div>
-    </section>
+      </div>
+
+      <section id="skills" class="skill-container project-container">
+        <h1 data-aos="fade-right" class="name">About</h1>
+        <hr class="about-me1" />
+        <div class="about-me-container">
+          <div class="about-me-inner-container">
+            <p class="about-me">
+              I am a Front End Web Developer specializinng in JavaScript. I live for technology, whether it's working with teams to get products to market, developing & designing websites/web applications for small businesses, or writing code to solve problems.
+            </p>
+            <p class="about-me">
+              My educational background consists of receiving my Bachelors of Science in Information Systems - Web Application Development from Illinois State University in 2018. Check out my <a href="#work-history">work history!</a>
+            </p>
+
+             <p class="about-me">
+              Here is a list of my proficent programming langauags/tools:
+            </p>
+            <!-- <a href="/img/dc_resume.pdf" download class="btn resume-btn"
+              >Resume <i class="fa fa-download" aria-hidden="true"></i
+            ></a> -->
+          </div>
+
+          <div class="main-skill-container">
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="300">
+              HTML<i class="fa fa-html5" aria-hidden="true"></i>
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="400">
+              CSS<i class="fa fa-css3" aria-hidden="true"></i>
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="500">
+              JavaScript<i class="fa-brands fa-js"></i>
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="600">
+              React.js<i class="fa-brands fa-react"></i>
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="700">
+              Next.js<img src="img/next-dot-js-svgrepo-com.svg" />
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="800">
+              Node.js<i class="fa-brands fa-node-js"></i>
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="1000">
+              Java<i class="fa-brands fa-java"></i>
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="1100">
+              PHP<i class="fa-brands fa-php"></i>
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="1200">
+              Strapi<img src="img/strapi-icon-svgrepo-com.svg" />
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="1300">
+              WordPress<i class="fa-brands fa-wordpress"></i>
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="1400">
+              Git<i class="fa-brands fa-git"></i>
+            </div>
+            <div class="code-lang" data-aos="flip-up" data-aos-duration="1500">
+              RESTful API<i class="fa fa-network-wired"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="services-container">
+        <div class="services-header">
+            <h1 data-aos="fade-right" data-aos-duration="600" class="name">Services</h1>
+            <hr class="about-me1" />
+        </div>
+       <div class="services-inner-container">
+        <div class="skill skill1">
+          
+          <i data-aos="fade-up" data-aos-duration="800" class="icon fas fa-laptop-code"></i>
+          <h3 class="right-p">Developer<h3/>
+          <p>
+            I can develop your website with modern technology
+          </p>
+        </div>
+        <div class="skill skill2">
+          <i data-aos="fade-up" data-aos-duration="900"  class="icon fas fa-sitemap"></i>
+          <h3 class="right-p">Designer</h3>
+          <p>
+            I can design your website to follow the style of your business
+          </p>
+        </div>
+        <div class="skill skill3">
+          <i data-aos="fade-up" data-aos-duration="1000" class="icon far fa-lightbulb"></i>
+          <h3 class="right-p">Support</h3>
+          <p>
+           I offer support and maintenance on any site
+          </p>
+        </div>
     </div>
+     
+      </section>
+      <section id="work-history" class="work-history-container project-container">
+        <h1 data-aos="fade-right" class="name">Work History</h1>
+        <hr class="about-me1" />
 
-    
+        <div class="work-history">
+          <div class="tab-work-history">
+            <ul>
+              <li class="list-item job1 active">Impact Networking</li>
+              <!-- <li class="list-item job2">Stars & Stripes Forever</li> -->
+              <li class="list-item job2">TEXT2DRIVE LLC</li>
+              <li class="list-item job3">SOGO Marketing</li>
+              <li class="list-item job4">Plainfield Central HS</li>
+            </ul>
+          </div>
+
+          <div class="single-work-history-container">
+            <div class="single-work-history work1">
+              <h3>Frontend Web Developer <span> @ Impact Networking</span></h3>
+              <h6>June 2022 - Present</h6>
+              <ul>
+                <li>
+                  Write modern, performant, maintainable code for a diverse
+                  array of client and internal projects
+                </li>
+                <li>
+                  Work with a variety of different languages, platforms,
+                  frameworks, and content management systems such as JavaScript,
+                 Strapi, React, WordPress, Next.js, and SASS
+                </li>
+                <li>
+                  Communicate with multi-disciplinary teams of engineers,
+                  designers, producers, and clients on a daily basis
+                </li>
+              </ul>
+            </div>
+
+            <!-- <div class="single-work-history work2 hidden">
+              <h3>
+                Freelance Web Developer
+                <span> @ Stars & Stripes Forever</span>
+              </h3>
+              <h6>November 2021 - May 2022</h6>
+              <ul>
+                <li>
+                  Created eCommerce website using HTML/CSS & JavaScript with
+                  GoDaddy as the Content Management System
+                </li>
+                <li>
+                  Monthly managing of the website by adding new products to
+                  inventory & content change requests.
+                </li>
+                <li>Meetings with client to ensure transparency</li>
+              </ul>
+            </div> -->
+
+            <div class="single-work-history work2 hidden">
+                <h3>Tech Specialist <span> @ TEXT2DRIVE LLC</span></h3>
+                <h6>November 2018 - May 2022</h6>
+                <ul>
+                  <li>
+                    Implementing & deploying our mobile Online Bill Pay solution
+                    through our gateway provider. Connecting our software to
+                    dealerships Merchant Accounts through APIs.
+                  </li>
+                  <li>
+                    Installing & troubleshooting EMV Chip Readers to the
+                    dealerships Internet network.
+                  </li>
+                  <li>
+                    Completing Cost Analysis by collecting and analyzing our
+                    dealership’s credit card processing and comparing it to what
+                    we can save them.
+                  </li>
+                </ul>
+              </div>
+
+            <div class="single-work-history hidden work3">
+              <h3>Freelance Web Developer <span> @ SOGO Marketing</span></h3>
+              <h6>November 2018 - February 2019</h6>
+              <ul>
+                <li>
+                  Creating & maintaining clients WordPress websites using
+                  JavaScript & HTML/CSS
+                </li>
+                <li>
+                  Android Mobile Application new feature implementation & bug
+                  fixes
+                </li>
+              </ul>
+            </div>
+
+            <div class="single-work-history hidden work4">
+              <h3>Assistant Wrestling Coach <span> @ Plainfield Central HS</span></h3>
+              <h6>October 2020 - Present</h6>
+              <ul>
+                <li>
+                  Coaching High School athletics for all grade levels: Freshman - Seniors
+                </li>
+                <li>
+                  Teach and lead new wrestling skills during practice and meets/tournaments
+                </li>
+              </ul>
+            </div> 
+          </div>
+        </div>
+      </section>
+      <div id="port" class="second-container">
+        <section class="project-container">
+          <h1 data-aos="fade-right" class="name">Recent Projects</h1>
+          <hr class="about-me1" />
+          <div class="flex-box">
+            <div data-aos="flip-right" class="portfolio">
+              <div class="portfolio1">
+                <img class="greek" src="img/DOT.png" alt="" />
+                <h3 class="port-name">DOT Security Careers Page</h3>
+                <h6 class="port-lang">HTML5, CSS3 & JavaScript</h6>
+                <a class="btn"  target="_blank" href="https://jobs.jobvite.com/dotsecurity/jobs">Visit</a>
+              </div>
+            </div>
+            <div data-aos="flip-right" class="portfolio">
+              <div class="portfolio1">
+                <img class="greek" src="img/denmark.png" alt="" />
+                <h3 class="port-name">Denmark College</h3>
+                <h6 class="port-lang">WordPress, HTML5, CSS3, PHP, JavaScript</h6>
+                <a class="btn"  target="_blank" href="https://www.denmarkcollege.edu/">Visit</a>
+              </div>
+            </div>
+            <div data-aos="flip-right" class="portfolio">
+              <div class="portfolio1">
+                <img class="greek" src="img/portfolio.png" alt="" />
+                <h3 class="port-name">Personal Portfolio</h3>
+                <h6 class="port-lang">HTML5, CSS3 & JavaScript</h6>
+                <a class="btn"  target="_blank" href="https://dylancramer.netlify.app/">Visit</a>
+              </div>
+            </div>
+
+            <!-- <div data-aos="flip-right" class="portfolio">
+              <div class="portfolio1">
+                <img class="greek" src="img/starsandstripes.png" alt="" />
+                <h3 class="port-name">Stars & Stripes</h3>
+                <h6 class="port-lang">
+                    WordPress, HTML5, CSS3, JavaScript
+                  </h6>
+                <a class="btn"  target="_blank" href="https://carsandstripesforeverinc.com/"
+                  >Vist</a
+                >
+              </div>
+            </div> -->
+
+            <div data-aos="flip-right" class="portfolio">
+              <div class="portfolio1">
+                <img class="greek" src="img/creativeagency.png" alt="" />
+                <h3 class="port-name">Creative Agency</h3>
+                <em><h3 class="port-lang">React, CSS3 & JavaScript</h3></em>
+                <a class="btn"  target="_blank" href="https://creativeagencyllc.netlify.app/">Visit</a>
+              </div>
+            </div>
+
+            <div data-aos="flip-right" class="portfolio">
+                <div class="portfolio1">
+                  <img class="greek" src="img/movie.png" alt="" />
+                  <h3 class="port-name">Movie Finder App</h3>
+                  <h3 class="port-lang">
+                      HTML5, CSS3, JavaScript & Movie API
+                    </h3>
+                  <a class="btn" target="_blank" href="https://helpfindmeamovie.netlify.app/"
+                    >Visit</a
+                  >
+                </div>
+              </div>
+
+            <!-- <div data-aos="flip-right" class="portfolio">
+                <div class="portfolio1">
+                  <img class="greek" src="img/greeklife.png" alt="" />
+                  <h3 class="port-name">Greek Life Website</h3>
+                  <h3 class="port-lang">
+                        In progress project using HTML5, CSS3, JavaScript & Bootstrap
+                    </h3>
+                  <a class="btn"  target="_blank" href="https://isugreeklife.netlify.app/">Visit</a>
+                </div>
+              </div> -->
+
+            <!-- <div data-aos="flip-right" class="portfolio">
+              <div class="portfolio1">
+                <img class="greek" src="img/col.png" alt="" />
+                <h3 class="port-name">Chain O' Lakes Marina</h3>
+                <h3 class="port-lang">
+                   In progress project using: HTML5, CSS3, JavaScript & Bootstrap
+                  </h3>
+                <a class="btn" target="_blank" href="https://chainolakesmarina.netlify.app/"
+                  >Visit</a
+                >
+              </div>
+            </div> -->
+
+         
+
+           
+
+            <!-- <div data-aos="flip-right" class="portfolio">
+              <div class="portfolio1">
+                <img class="greek" src="img/pig-game.png" alt="" />
+                <h3 class="port-name">Pig Game</h3>
+                <em><h3 class="port-lang">HTML5, CSS3 & JavaScript</h3></em>
+                <a class="btn" href="https://dicepiggygame.netlify.app/"
+                  >Play</a
+                >
+              </div>
+            </div> -->
+          </div>
+        </section>
+      </div>
+
+      <section id="contact" class="contact-forum">
+        
+        <h1 data-aos="fade-right" class="name">Contact Me</h1>
+        <hr class="about-me1" />
+        <div class="contact-inner-container">
+            <div class="forum">
+                <h2>
+                    Free 30 min consultation to talk about your goals of your website/web application, budget and the process. 
+                </h2>
+                <form method="POST" action="https://formsubmit.co/dcrame2@gmail.com">
+                    <input type="hidden" name="_subject" value="New submission from website!">
+                    <input type="hidden" name="_next" value="https://dylancramer.netlify.app/thanks.html">
+                    <input type="hidden" name="_captcha" value="false">
+                <div class="labels">
+              <label for="fname">Full Name*</label>
+              <input  type="text" id="fname" name="fname" placeholder="Your name..." required>
+            </div>
+        <div class="labels">
+              <label for="email">Email*</label>
+              <input type="text" id="lname" name="lname" placeholder="Email address..." required>
+            </div>
+            <div class="labels">
+              <label for="subject">Message*</label>
+              <textarea id="subject" name="message" placeholder="Please write a message..." style="height:200px" required></textarea>
+            </div>
+            
+              <input class="btn" type="submit" value="Submit">
+            
+            </form>
+        </div>
+
+        <img id="logo" class="rotated" src="img/logo.png" />
     
 
-    <!-- <div class="contact-forum">
+    <div class="map-container"> 
+
+        <div style="width: 100%"><iframe width="100%" height="500px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Chicago,%20IL+(Dylan%20Cramer)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
+    </div>
+</div>
+        
+      </section>
+
+      <!-- <div class="contact-forum">
         <h1 class="name">Contact</h1>
         <div class="forum">
             <div class="label-flex">
@@ -204,17 +464,55 @@
         </div>
     </div> -->
 
-    <div class="footer-container">
-        <p class="right-p1">Created by Dylan Cramer</p>
+      <div class="footer-container">
+        <div class="footer-inner-container">
+        <div class="left-nav">
 
+               <a href="https://www.facebook.com/dylan.cramer.5" class="fb"
+              ><i class="fab fa-facebook-square"></i
+            ></a> 
+         <a href="https://www.linkedin.com/in/dylan-cramer/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+         <a href="https://github.com/dcrame2/"><i class="fab fa-github"></i></a>
+      <a href="https://angel.co/u/dylancramer">
+              <i class="fab fa-angellist"></i
+            ></a>
+            
+
+            
+            <!-- <ul>
+            <li><a href="https://www.facebook.com/dylan.cramer.5" class="fb"
+              ><i class="fab fa-facebook-square"></i
+            ></a> </li> 
+        <li>  <a href="https://www.linkedin.com/in/dylan-cramer/"
+              ><i class="fab fa-linkedin"></i
+            ></a></li> 
+        <li>  <a href="https://github.com/dcrame2/"><i class="fab fa-github"></i></a></li> 
+    <li>   <a href="https://angel.co/u/dylancramer">
+              <i class="fab fa-angellist"></i
+            ></a></li> 
+            </ul> -->
+       
+          </div>
+          <div>
+        <h3 class="right-p1">Created by Dylan Cramer &copy; 2023</h3>
+        </div>
+</div>
+</div>
     </div>
 
-    
-</div>
-
-
-
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://kit.fontawesome.com/41155fb5e6.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
+
+
+
