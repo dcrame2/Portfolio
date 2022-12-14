@@ -22,7 +22,7 @@ nav {
   height: 80px;
   position: fixed;
   width: 100%;
-  z-index: 5;
+  z-index: 10;
   background-color: #313131;
   border-bottom: 2px solid #000;
 }
@@ -601,7 +601,7 @@ section.services-container {
 .btn {
   font-size: 20px;
   margin-top: 10px;
-  padding: 10px 10px;
+  padding: 10px 10px !important;
   width: 17%;
   text-align: center;
   border-radius: 8px;
