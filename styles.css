@@ -266,10 +266,14 @@ h1:before {
   justify-content: start;
   padding-top: 100px;
   flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .topnav.active1 {
   visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
 /* Style the links inside the navigation bar */
@@ -580,11 +584,21 @@ section.services-container {
   color: #bd1616;
 }
 
+h4.port-lang {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
 .port-lang {
   font-size: 14px;
   color: #ccc;
+  margin-bottom: 5px;
   letter-spacing: 1px;
   line-height: 1.2;
+  /* font-style: italic; */
 }
 
 .portfolio1 {
