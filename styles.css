@@ -287,7 +287,7 @@ h1:before {
   padding: 20px 16px;
   text-decoration: none;
   font-size: 25px;
-  transition: color 5s ease;
+  transition: all 0.5s ease;
   /* text-decoration: underline #bd1616; */
 }
 
@@ -295,7 +295,7 @@ h1:before {
 .topnav a:hover {
   color: #bd1616;
   text-decoration: underline #bd1616;
-  transition: color 5s ease;
+  transition: all 0.5s ease;
 }
 
 /* Add a color to the active/current link */
