@@ -64,11 +64,13 @@ nav .navbar ul a:visited {
 nav .navbar ul a {
   text-decoration: none;
   color: #fff;
+  transition: all 0.4s ease-in;
 }
 
 nav .navbar ul li a:hover {
   color: #bd1616;
   border-bottom: 3px solid #bd1616;
+  transition: all 0.4s ease-in;
 }
 
 /* END NAVigation */
@@ -234,6 +236,7 @@ h1:before {
   border-radius: 6px;
   list-style-type: none;
   text-align: left;
+  cursor: pointer;
 }
 
 .work-history-container .work-history .tab-work-history ul li.list-item.active {
@@ -284,6 +287,7 @@ h1:before {
   padding: 20px 16px;
   text-decoration: none;
   font-size: 25px;
+  transition: color 5s ease;
   /* text-decoration: underline #bd1616; */
 }
 
@@ -291,6 +295,7 @@ h1:before {
 .topnav a:hover {
   color: #bd1616;
   text-decoration: underline #bd1616;
+  transition: color 5s ease;
 }
 
 /* Add a color to the active/current link */
@@ -400,6 +405,7 @@ section.services-container {
   background-color: transparent;
   color: #bd1616;
   border: 2px solid #bd1616;
+  transition: all 0.5s ease-in-out;
 }
 .work {
   margin: 1% 5% 1%;
@@ -624,9 +630,11 @@ h4.port-lang {
   background-color: #bd1616;
   color: #231f20;
   outline: none;
+  cursor: pointer;
   /* border: none; */
   font-weight: 700;
   text-decoration: none;
+  transition: all 0.5s ease-in-out;
 }
 
 /* @keyframes skills1 {
@@ -830,10 +838,12 @@ textarea {
   font-size: 30px;
   text-decoration: none;
   color: #bd1616;
+  transition: color 0.5s ease-in-out;
 }
 
 .fab:hover {
   color: #fff;
+  transition: color 0.5s ease-in-out;
 }
 
 .right-p1 {
