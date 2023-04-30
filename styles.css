@@ -16,6 +16,21 @@ body {
   color: #bd1616;
 }
 
+.navbar li:nth-child(4) a {
+  padding: 10px 20px;
+  background-color: #bd1616;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 2px solid #bd1616;
+}
+
+.navbar li:nth-child(4) a:hover {
+  background-color: transparent;
+  border: 2px solid #bd1616;
+  color: #fff;
+}
+
 /* NAVigation */
 
 nav {
@@ -298,6 +313,22 @@ h1:before {
   /* transition: all 0.5s ease; */
 }
 
+.topnav a:nth-child(4) {
+  padding: 10px 20px;
+  background-color: #bd1616;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 2px solid #bd1616;
+  margin: 0 100px;
+}
+
+.topnav a:nth-child(4):hover {
+  background-color: transparent;
+  border: 2px solid #bd1616;
+  color: #fff;
+}
+
 /* Add a color to the active/current link */
 .topnav a.active {
   color: white;
@@ -403,7 +434,7 @@ section.services-container {
 
 .btn:hover {
   background-color: transparent;
-  color: #bd1616;
+  color: #fff;
   border: 2px solid #bd1616;
   transition: all 0.5s ease-in-out;
 }
@@ -628,7 +659,7 @@ h4.port-lang {
   border: 2px solid #bd1616;
   display: block;
   background-color: #bd1616;
-  color: #231f20;
+  color: #fff;
   outline: none;
   cursor: pointer;
   /* border: none; */
@@ -743,6 +774,11 @@ h4.port-lang {
   padding: 10px 0 10px 3px;
 }
 
+.forum {
+  max-width: 600px;
+  width: 100%;
+}
+
 .forum p {
   background-color: #bd1616;
   font-size: 20px;
@@ -763,7 +799,7 @@ h4.port-lang {
 
 .contact-inner-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   gap: 70px;
