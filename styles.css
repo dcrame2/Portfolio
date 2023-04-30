@@ -48,6 +48,12 @@ nav #logo {
   position: absolute;
   top: 15px;
   left: 100px;
+  transition: transform 0.3s ease-in;
+}
+
+nav #logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in;
 }
 
 nav .navbar ul {
@@ -958,6 +964,10 @@ textarea {
     font-size: 1.4rem;
   }
 
+  .skill-container .about-me-container {
+    flex-direction: column;
+  }
+
   .city {
     width: 70%;
   }
@@ -1000,6 +1010,9 @@ textarea {
     flex-wrap: wrap;
     flex-direction: column-reverse;
   }
+  .skill-container .about-me-container {
+    flex-direction: column;
+  }
 
   .pic {
     width: 50%;
@@ -1021,9 +1034,9 @@ textarea {
     width: 40%;
   }
 
-  .code-lang {
+  /* .code-lang {
     height: 20px;
-  }
+  } */
 
   .my-header,
   .about-me {
