@@ -341,8 +341,8 @@ h1:before {
   color: #fff;
   border-radius: 5px;
   text-decoration: none;
+  margin: 200px 100px 0 100px;
   border: 2px solid #bd1616;
-  margin: 0 100px;
 }
 
 .topnav a:nth-child(4):hover {
