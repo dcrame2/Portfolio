@@ -277,12 +277,24 @@ h1:before {
 }
 
 .work-history-container .work-history .tab-work-history ul li.list-item.active {
-  /* color: #ff0000; */
   background-color: #bd1616;
-  opacity: 0.8;
-  /* margin: 10px 0; */
+  /* opacity: 0.8; */
+
   list-style-type: none;
+  position: relative;
 }
+
+/* .work-history-container .work-history .tab-work-history ul li.active::after {
+  content: "";
+  width: 20px;
+  height: 15px;
+  right: 8px;
+  top: 12px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/img/arrow-right-solid.svg);
+} */
 
 .single-work-history-container .single-work-history ul li:before {
   content: "•";
@@ -1120,7 +1132,7 @@ textarea {
   }
   .work-history-container .work-history .tab-work-history ul li {
     font-size: 14px;
-    min-width: 160px;
+    min-width: 170px;
     padding: 10px 5px;
     text-align: center;
   }

@@ -22,6 +22,12 @@ const mobileNav = document.querySelectorAll(".mobile-nav");
 
 const xBtn = document.querySelector(".x-btn");
 
+const ulContainer = document.querySelector(".ul-container");
+
+ulContainer.addEventListener("click", function () {
+  ulContainer.classList.toggle("active");
+});
+
 mobileNav.forEach((item, i, arr) => {
   item.addEventListener("click", () => {
     nav.classList.toggle("active1");
@@ -73,57 +79,46 @@ listItem.forEach((list, i, arr) => {
       arr[1].classList.remove("active");
       arr[2].classList.remove("active");
       arr[3].classList.remove("active");
-      arr[4].classList.remove("active");
+      // arr[4].classList.remove("active");
       workHistory[0].classList.remove("hidden");
       workHistory[1].classList.add("hidden");
       workHistory[2].classList.add("hidden");
       workHistory[3].classList.add("hidden");
-      workHistory[4].classList.add("hidden");
+      // workHistory[4].classList.add("hidden");
     } else if (e.target.classList.contains("job2")) {
       arr[0].classList.remove("active");
       arr[1].classList.add("active");
       arr[2].classList.remove("active");
       arr[3].classList.remove("active");
-      arr[4].classList.remove("active");
+      // arr[4].classList.remove("active");
       // list.classList.add("active");
       workHistory[0].classList.add("hidden");
       workHistory[1].classList.remove("hidden");
       workHistory[2].classList.add("hidden");
       workHistory[3].classList.add("hidden");
-      workHistory[4].classList.add("hidden");
+      // workHistory[4].classList.add("hidden");
     } else if (e.target.classList.contains("job3")) {
       arr[0].classList.remove("active");
       arr[1].classList.remove("active");
       arr[2].classList.add("active");
       arr[3].classList.remove("active");
-      arr[4].classList.remove("active");
+      // arr[4].classList.remove("active");
       workHistory[0].classList.add("hidden");
       workHistory[1].classList.add("hidden");
       workHistory[2].classList.remove("hidden");
       workHistory[3].classList.add("hidden");
-      workHistory[4].classList.add("hidden");
-    } else if (e.target.classList.contains("job4")) {
-      arr[0].classList.remove("active");
-      arr[1].classList.remove("active");
-      arr[2].classList.remove("active");
-      arr[3].classList.add("active");
-      arr[4].classList.remove("active");
-      workHistory[0].classList.add("hidden");
-      workHistory[1].classList.add("hidden");
-      workHistory[2].classList.add("hidden");
-      workHistory[3].classList.remove("hidden");
-      workHistory[4].classList.add("hidden");
+      // workHistory[4].classList.add("hidden");
     } else {
       arr[0].classList.remove("active");
       arr[1].classList.remove("active");
       arr[2].classList.remove("active");
-      arr[3].classList.remove("active");
-      arr[4].classList.add("active");
+      arr[3].classList.add("active");
+      // arr[4].classList.remove("active");
       workHistory[0].classList.add("hidden");
       workHistory[1].classList.add("hidden");
       workHistory[2].classList.add("hidden");
-      workHistory[3].classList.add("hidden");
-      workHistory[4].classList.remove("hidden");
+      workHistory[3].classList.remove("hidden");
+      // workHistory[4].classList.add("hidden");
     }
   });
 });
