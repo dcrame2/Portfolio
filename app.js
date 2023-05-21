@@ -151,3 +151,7 @@ listItem.forEach((list, i, arr) => {
 // }
 
 window.addEventListener("load", AOS.refresh);
+
+AOS.init({
+  once: true, // Set the once option to true
+});
