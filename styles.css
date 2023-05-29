@@ -904,8 +904,9 @@ textarea {
   flex-direction: column;
 }
 
-.footer-container .footer-inner-container ul a {
+.footer-container .footer-inner-container ul li a {
   text-decoration: none;
+  color: #fff;
 }
 
 .footer-container .footer-inner-container ul li {
@@ -915,7 +916,10 @@ textarea {
   color: black;
 }
 
-.footer-container .footer-inner-container ul a:visited {
+.footer-container .footer-inner-container ul li a:visited {
+  color: #fff;
+}
+.footer-container .footer-inner-container ul li a:visited {
   color: #fff;
 }
 
